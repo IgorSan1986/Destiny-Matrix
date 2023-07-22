@@ -1,0 +1,34 @@
+{
+	"name": "heatmask",
+	"devDependencies": {
+		"@babel/cli": "^7.17.10",
+		"@babel/core": "^7.17.12",
+		"@babel/preset-env": "^7.17.12",
+		"autoprefixer": "^10.4.8",
+		"babel-preset-minify": "^0.5.2",
+		"bootstrap": "^5.1.3",
+		"gulp": "^4.0.2",
+		"gulp-gettext": "^0.3.0",
+		"icon-font-generator": "^2.1.11",
+		"node-sass": "^7.0.1",
+		"fantasticon": "^2.0.0"
+	},
+	"dependencies": {
+		"@popperjs/core": "^2.11.5",
+		"normalize.css": "^8.0.1"
+	},
+	"scripts": {
+		"watch": "npm run watch:theme:scss & npm run watch:theme:js",
+		"watch:theme:scss": "node-sass --include-path scss css/ -o . --source-map true --output-style expanded --indent-type tab --indent-width 1 -w",
+		"watch:theme:js": "babel js -d js --out-file-extension .min.js --source-maps --ignore=js/**/*.min.js --presets=@babel/preset-env --watch",
+		"build": "npm run compile",
+		"compile": "npm run compile:theme:scss & npm run compile:theme:js",
+		"compile:theme:scss": "node-sass css/ -o . --output-style compressed",
+		"compile:theme:js": "babel js -d js --out-file-extension .min.js --no-comments --ignore=js/**/*.min.js --presets=@babel/preset-env,babel-preset-minify",
+		"watch:building": "cd inc/building && npm run watch",
+		"compile:building": "cd inc/building && npm run compile",
+		"icont:generate": "cd resources/fonts/Icont && npm run generate",
+		"i18n:iconfont:pot": "cd resouces/fonts/Icont && npm run i18n:pot",
+		"i18n:iconfont:json": "cd resouces/fonts/Icont && npm run i18n:json"
+	}
+}

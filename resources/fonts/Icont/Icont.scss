@@ -1,0 +1,39 @@
+$Icont-font: "Icont";
+
+@font-face {
+    font-family: $Icont-font;
+    src: url("./Icont.eot?c23486dcbba3100d8fda103a297a8e76#iefix") format("embedded-opentype"),
+url("./Icont.woff2?c23486dcbba3100d8fda103a297a8e76") format("woff2"),
+url("./Icont.woff?c23486dcbba3100d8fda103a297a8e76") format("woff");
+}
+
+i[class^="icont-"]:before, i[class*=" icont-"]:before {
+    font-family: Icont !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$Icont-map: (
+    "facebook": "\f101",
+    "instagram": "\f102",
+    "reddit": "\f103",
+    "youtube": "\f104",
+);
+
+.icont-facebook:before {
+    content: map-get($Icont-map, "facebook");
+}
+.icont-instagram:before {
+    content: map-get($Icont-map, "instagram");
+}
+.icont-reddit:before {
+    content: map-get($Icont-map, "reddit");
+}
+.icont-youtube:before {
+    content: map-get($Icont-map, "youtube");
+}

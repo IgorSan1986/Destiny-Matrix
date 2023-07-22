@@ -1,0 +1,119 @@
+.nav-bar {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	color: $secondary-blue;
+	font-family: $font-family-antonio;
+	letter-spacing: 2px;
+}
+
+.menu__list {
+	display: flex;
+	width: 218px;
+	height: 854px;
+
+	position: fixed;
+	top: 0;
+	left: -100%;
+
+	padding-top: 99px;
+	padding-left: 31px;
+
+	flex-direction: column;
+	row-gap: 30px;
+
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+
+	font-size: 15px;
+	background-color: $primary-white;
+	transition: 0.2s all ease-in-out;
+
+	-webkit-overflow-scrolling: touch;
+	z-index: 3;
+
+	&::before {
+		content: url("/resources/background-svg/stars-mobile.svg");
+		position: absolute;
+		top: 356px;
+		left: 0;
+		z-index: -1;
+	}
+
+	@include media-breakpoint-up(sm) {
+		font-size: 18px;
+	}
+
+	@include media-breakpoint-up(md) {
+		width: auto;
+		height: auto;
+		margin-right: 0;
+
+		padding-top: 0;
+		padding-left: 0;
+
+		flex-direction: row;
+		column-gap: clamp(1.25rem, calc(-3.438rem + 9.38vw), 4.063rem);
+
+		position: relative;
+		top: 0;
+		left: 0;
+
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 24px;
+		letter-spacing: 2px;
+
+		background-color: inherit;
+
+		&::before {
+			display: none;
+		}
+	}
+
+	li > a {
+		transition: opacity 0.2s ease-in;
+
+		&:hover {
+			opacity: 0.7;
+		}
+
+		&:active {
+			position: relative;
+			top: 1px;
+		}
+	}
+
+	& li:last-child {
+		margin-top: 19px;
+	}
+}
+
+.btn-nav--active {
+	display: block;
+	padding: 7px 29px;
+	font-size: 13px;
+
+	@include media-breakpoint-up(md) {
+		display: none;
+	}
+}
+
+.menu__btn {
+	display: block;
+	margin: 0;
+	padding: 0;
+
+	z-index: 2;
+
+	@include media-breakpoint-up(md) {
+		display: none;
+	}
+}
+
+.active {
+	left: 0;
+}

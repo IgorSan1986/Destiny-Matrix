@@ -1,0 +1,242 @@
+.form-date-of-birth {
+	position: relative;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	gap: 15px;
+
+	font-size: 14px;
+	font-family: $font-family-mulish;
+	font-weight: 300;
+
+	@include media-breakpoint-up(sm) {
+		width: 75%;
+
+		grid-template-rows: 1fr 3fr;
+
+		font-size: 16px;
+	}
+
+	@include media-breakpoint-up(md) {
+		max-width: 388px;
+		width: 100%;
+	}
+
+	@include media-breakpoint-up(lg) {
+		width: 387px;
+	}
+
+	&::after {
+		content: url("../../resources/background-svg/Union.svg");
+		display: inline-block;
+		position: absolute;
+		top: -425px;
+		left: clamp(-3.75rem, calc(-13.516rem + 48.83vw), 4.063rem);
+		width: 402px;
+		height: 414px;
+		opacity: 0.19;
+
+		@include media-breakpoint-up(sm) {
+			top: -430px;
+			left: clamp(-0.438rem, calc(-13.75rem + 36.98vw), 4rem);
+		}
+
+		@include media-breakpoint-up(md) {
+			width: 300px;
+			height: auto;
+			top: -46px;
+			left: clamp(3.563rem, calc(-14.25rem + 49.48vw), 9.5rem);
+		}
+
+		@include media-breakpoint-up(lg) {
+			top: -66px;
+			left: clamp(3.563rem, calc(-14.25rem + 49.48vw), 9.5rem);
+		}
+	}
+
+	// @include media-breakpoint-up(sm) {
+	// 	font-size: 14px;
+
+	// 	grid-template-rows: 1fr auto;
+
+	// 	&::after {
+	// 		top: -430px;
+	// 		left: -52px;
+	// 		width: 402px;
+	// 		height: 414px;
+	// 		opacity: 0.19;
+	// 	}
+	// }
+
+	// @include media-breakpoint-up(md) {
+	// 	width: 80%;
+	// 	margin: 0 auto;
+
+	// 	&::after {
+	// 		top: -430px;
+	// 		left: clamp(0.875rem, calc(-13.638rem + 40.31vw), 5.688rem);
+	// 		width: 402px;
+	// 		height: 414px;
+	// 		opacity: 0.19;
+	// 	}
+	// }
+}
+// form-grid
+.grid-form__item1 {
+	grid-column-start: 1;
+	grid-row-start: 1;
+}
+.grid-form__item2 {
+	grid-column-start: 2;
+	grid-row-start: 1;
+}
+.grid-form__item3 {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 4;
+}
+
+//form-list-grid
+.grid-list__container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto;
+	gap: 15px;
+}
+.grid-list-item1 {
+	grid-column-start: 1;
+	grid-column-end: 5;
+
+	grid-row-start: 2;
+	grid-row-end: 2;
+
+	&.compatibility {
+		grid-row-start: 1;
+	}
+
+	@include media-breakpoint-up(sm) {
+		grid-column-start: 1;
+		grid-column-end: 4;
+		grid-row-start: 1;
+		grid-row-end: 2;
+
+		&.compatibility {
+			grid-column-end: 5;
+			grid-row-start: 1;
+		}
+	}
+}
+
+.grid-list-item2 {
+	grid-column-start: 4;
+	grid-column-end: 5;
+
+	@include media-breakpoint-down(sm) {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 1;
+	}
+}
+
+.grid-list-item3 {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 3;
+
+	&.compatibility {
+		grid-column-end: 5;
+	}
+
+	@include media-breakpoint-down(sm) {
+		grid-column-end: 5;
+		grid-row-start: 4;
+
+		&.compatibility {
+			grid-column-end: 5;
+			grid-row-start: 2;
+		}
+	}
+}
+.grid-list-item4 {
+	grid-column-start: 4;
+	grid-column-end: 5;
+
+	@include media-breakpoint-down(sm) {
+		grid-column-start: 3;
+		grid-column-end: 5;
+		grid-row-start: 1;
+	}
+}
+.grid-list-item5 {
+	grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start: 3;
+	grid-row-end: 4;
+
+	@include media-breakpoint-down(sm) {
+		grid-row-start: 4;
+		grid-row-end: 5;
+
+		&.compatibility {
+			grid-column-end: 5;
+			grid-row-start: 3;
+		}
+	}
+}
+
+.form-btn {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 8px;
+
+	font-family: $font-family-mulish;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 26px;
+
+	border-radius: 15px;
+	border: 1px solid rgba(0, 0, 0, 0.18);
+	color: $secondary-black;
+
+	&--active {
+		background-color: $primary-white;
+	}
+
+	&::placeholder {
+		padding: 0 14px;
+		color: $secondary-black;
+	}
+
+	@include media-breakpoint-up(md) {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		padding: 8px;
+
+		font-family: $font-family-mulish;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 26px;
+
+		border-radius: 15px;
+		border: 1px solid rgba(0, 0, 0, 0.18);
+		color: $secondary-black;
+
+		&--active {
+			background-color: $primary-white;
+		}
+
+		&::placeholder {
+			padding: 0 14px;
+			color: $secondary-black;
+		}
+	}
+}

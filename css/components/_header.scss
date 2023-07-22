@@ -1,0 +1,17 @@
+header {
+	width: 100vw;
+	position: absolute;
+	padding-top: 50px;
+
+	@include media-breakpoint-up(sm) {
+		position: absolute;
+		padding-top: 50px;
+	}
+
+	@include media-breakpoint-up(md) {
+		position: relative;
+		width: 100vw;
+		margin-bottom: 73px;
+		padding-top: 60px;
+	}
+}

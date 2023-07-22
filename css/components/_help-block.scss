@@ -1,0 +1,100 @@
+.help-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin-bottom: 235px;
+
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 93px;
+		padding: 0 31px;
+	}
+
+	@include media-breakpoint-down(md) {
+		margin-bottom: 120px;
+	}
+
+	h2 {
+		margin-bottom: 73px;
+		text-align: center;
+
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 34px;
+			padding: 0 15px;
+
+			line-height: 1.533;
+		}
+	}
+
+	ul {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		row-gap: clamp(1.25rem, calc(-3.75rem + 10vw), 4.25rem);
+		column-gap: clamp(1.25rem, calc(-5.729rem + 13.96vw), 5.438rem);
+
+		margin-bottom: 97px;
+
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 54px;
+			grid-template-columns: 1fr;
+			column-gap: 0;
+
+			& > li:first-child > p:first-child {
+				position: relative;
+				bottom: 5px;
+			}
+		}
+
+		@include media-breakpoint-down(md) {
+			margin-bottom: 40px;
+		}
+
+		li {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			column-gap: 18px;
+
+			@include media-breakpoint-down(sm) {
+				flex-direction: row;
+				align-items: center;
+			}
+
+			.help-icon {
+				margin-bottom: 24px;
+
+				font-size: 48px;
+				line-height: 26px;
+
+				@include media-breakpoint-down(sm) {
+					line-height: 30px;
+				}
+			}
+
+			p {
+				text-align: center;
+
+				span {
+					font-weight: 700;
+				}
+
+				@include media-breakpoint-down(sm) {
+					text-align: left;
+					font-size: clamp(0.563rem, calc(-0.341rem + 3.38vw), 0.875rem);
+					line-height: 1.556;
+				}
+
+				@include media-breakpoint-down(md) {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		button {
+			padding: 6px 46px;
+		}
+	}
+}

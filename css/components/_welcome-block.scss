@@ -1,0 +1,129 @@
+.welcome-block {
+	position: relative;
+	margin-bottom: 70px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@include media-breakpoint-up(md) {
+		margin-bottom: 80px;
+		align-items: flex-start;
+	}
+
+	@include media-breakpoint-up(lg) {
+		margin-bottom: 180px;
+	}
+
+	&::before {
+		content: "";
+		display: none;
+
+		@include media-breakpoint-up(md) {
+			content: url("/resources/background-svg/Stars1.svg");
+			position: absolute;
+			display: inline-block;
+			top: -92px;
+			left: -228px;
+			z-index: -1;
+		}
+
+		@include media-breakpoint-up(lg) {
+		}
+	}
+
+	&::after {
+		content: "";
+		display: none;
+
+		@include media-breakpoint-up(md) {
+			content: url("/resources/background-svg/Stars2.svg");
+			position: absolute;
+			display: inline-block;
+			top: 0px;
+			right: -193px;
+		}
+	}
+
+	h1 {
+		margin-bottom: 14px;
+
+		@include media-breakpoint-up(sm) {
+			margin-bottom: 16px;
+		}
+
+		@include media-breakpoint-up(md) {
+			margin-bottom: 20px;
+		}
+	}
+
+	p {
+		margin-bottom: 64px;
+
+		font-size: clamp(0.625rem, calc(0.101rem + 2.15vw), 0.875rem);
+		text-align: center;
+		line-height: 1.9;
+
+		@include media-breakpoint-up(md) {
+			margin-bottom: 46px;
+
+			text-align: left;
+			font-size: 16px;
+			line-height: 1.66;
+		}
+
+		@include media-breakpoint-up(lg) {
+			width: 700px;
+			margin-bottom: 50px;
+		}
+	}
+
+	// @include media-breakpoint-up(md) {
+	// 	padding-top: 18px;
+	// 	margin-bottom: 180px;
+
+	// 	h1 {
+	// 		margin-bottom: 20px;
+	// 	}
+
+	// 	p {
+	// 		margin-bottom: 50px;
+
+	// 		max-width: 699px;
+	// 		font-size: 16px;
+	// 		line-height: 30px;
+	// 	}
+
+	// 	&::after {
+	// 		content: url("/resources/background-svg/Stars2.svg");
+	// 		position: absolute;
+	// 		display: inline-block;
+	// 		top: 0px;
+	// 		right: -193px;
+	// 	}
+	// }
+
+	// @include media-breakpoint-down(sm) {
+	// 	margin-bottom: 100px;
+
+	// 	align-items: center;
+
+	// 	p {
+	// 		text-align: center;
+	// 		margin-bottom: 50px;
+	// 		line-height: 1.7;
+	// 	}
+	// }
+
+	// @include media-breakpoint-down(md) {
+	// 	margin-bottom: 100px;
+
+	// 	align-items: center;
+
+	// 	p {
+	// 		text-align: center;
+	// 		margin-bottom: 50px;
+	// 		line-height: 1.7;
+	// 	}
+	// }
+}

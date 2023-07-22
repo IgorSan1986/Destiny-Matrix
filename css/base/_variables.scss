@@ -1,0 +1,47 @@
+//Fonts
+$font-family-inter: "Inter", serif;
+$font-family-mulish: "Mulish", serif;
+$font-family-antonio: "Antonio", sans-serif;
+$font-family-roboto: "Roboto", sans-serif;
+
+// ---
+// Override some variables for bootstrap
+$breakpoints: (
+	xs: 376px,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px
+);
+
+//---
+//Colors
+$color-white: #fff;
+$color-black: #000;
+$color-blue: #0c51d6;
+$color-gray-blue: #505f98;
+$color-dark-blue: #222f65;
+$color-gray: #cdd1d4;
+$color-dark-gray: #091133;
+$color-light-gray: #f2f2f2;
+$color-soft-pink: #ebd9ef;
+
+$primary-black: $color-dark-gray;
+$primary-white: $color-white;
+$primary-blue: $color-gray-blue;
+$secondary-blue: $color-blue;
+$secondary-black: $color-black;
+$footer-bg: $color-soft-pink;
+
+//Icons
+$Icont: ();
+
+@each $icon in (facebook, instagram, youtube) {
+	$Icont: map-merge(
+		$Icont,
+		(
+			$icon: unquote('"#{\f1+dec2hex(length($Icont) + 1)}"')
+		)
+	);
+}

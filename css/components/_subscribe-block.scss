@@ -1,0 +1,125 @@
+.subscribe-block {
+	max-width: 1130px;
+	margin: 0 auto;
+	margin-bottom: 76px;
+	padding: 0 40px;
+
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 150px;
+	}
+
+	&__wrapper {
+		margin-bottom: 83px;
+
+		display: flex;
+		justify-content: space-between;
+		gap: clamp(0.625rem, calc(-2.708rem + 6.67vw), 2.625rem);
+
+		@include media-breakpoint-down(sm) {
+			margin: 0 auto;
+			margin-bottom: 30px;
+
+			flex-direction: column;
+			align-items: center;
+			gap: 25px;
+		}
+
+		@include media-breakpoint-down(md) {
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 25px;
+		}
+
+		article {
+			max-width: 343px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 22px 7px;
+
+			background-color: $primary-white;
+			border-radius: 30px;
+
+			@include media-breakpoint-down(sm) {
+				width: 248px;
+				height: 284px;
+				padding: 14px 10px 20px;
+
+				border-radius: 15px;
+			}
+
+			h3 {
+				line-height: 48px;
+				margin-bottom: 24px;
+
+				@include media-breakpoint-down(sm) {
+					margin-bottom: 0;
+					line-height: normal;
+				}
+			}
+
+			ul {
+				display: list-item;
+				padding-left: 20px;
+				margin-bottom: 24px;
+				flex-grow: 1;
+
+				li {
+					text-align: start;
+					list-style: initial;
+					list-style-position: outside;
+
+					font-size: 14px;
+
+					@include media-breakpoint-down(sm) {
+						font-size: 8px;
+						line-height: 1.875;
+					}
+
+					&::marker {
+						font-size: 10px;
+					}
+
+					&:last-of-type {
+						margin-bottom: 0;
+					}
+
+					p {
+						margin-bottom: 32px;
+						@include media-breakpoint-down(sm) {
+							margin-bottom: 5px;
+						}
+					}
+				}
+			}
+
+			.subscribe-block__price {
+				margin-bottom: 24px;
+
+				font-family: $font-family-roboto;
+				font-size: 36px;
+				font-weight: 500;
+				line-height: 66px;
+				letter-spacing: 1px;
+				color: #222f65;
+
+				@include media-breakpoint-down(sm) {
+					margin-bottom: 14px;
+					font-size: 24px;
+					line-height: 1;
+				}
+			}
+		}
+	}
+
+	> p {
+		text-align: center;
+		font-size: 16px;
+		font-weight: 800;
+
+		@include media-breakpoint-down(sm) {
+			font-size: 10px;
+			line-height: 2.6;
+		}
+	}
+}

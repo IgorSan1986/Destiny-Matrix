@@ -1,0 +1,146 @@
+.discover-block {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin-bottom: 228px;
+
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 125px;
+	}
+
+	@include media-breakpoint-down(md) {
+		margin-bottom: 120px;
+	}
+
+	&::before {
+		content: url("/resources/background-svg/discover-background.svg");
+
+		width: 1280px;
+		height: 1022px;
+		display: inline-block;
+		position: absolute;
+		top: -164px;
+		left: -150px;
+
+		@include media-breakpoint-down(sm) {
+			width: 500px;
+			height: 400px;
+			top: 180px;
+			left: clamp(-4.063rem, calc(-13.151rem + 38.27vw), 0.625rem);
+		}
+
+		@include media-breakpoint-down(md) {
+			width: 700px;
+			height: 600px;
+			top: 0;
+			left: clamp(-4.375rem, calc(-17.569rem + 36.65vw), 0rem);
+		}
+	}
+
+	h2 {
+		position: relative;
+		text-align: center;
+		margin-bottom: 69px;
+
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 24px;
+
+			line-height: 1.533;
+		}
+
+		@include media-breakpoint-down(md) {
+			margin-bottom: 40px;
+
+			line-height: 1.533;
+		}
+	}
+
+	ul {
+		position: relative;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		column-gap: 90px;
+		row-gap: 0;
+
+		@include media-breakpoint-down(md) {
+			margin-bottom: 25px;
+
+			grid-template-columns: repeat(3, 1fr);
+			column-gap: 0;
+			row-gap: 25px;
+		}
+
+		@include media-breakpoint-down(md) {
+			margin-bottom: 50px;
+
+			grid-template-columns: repeat(3, 1fr);
+			column-gap: 0;
+			row-gap: 25px;
+		}
+	}
+}
+
+.discover-item1 {
+	display: inline-grid;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+
+	@include media-breakpoint-up(md) {
+		grid-column-start: 1;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+}
+
+.discover-item2 {
+	display: inline-grid;
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 2;
+
+	@include media-breakpoint-up(md) {
+		grid-column-start: 2;
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+}
+
+.discover-item3 {
+	display: inline-grid;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 3;
+
+	top: 0;
+	left: 0;
+
+	@include media-breakpoint-up(md) {
+		grid-column-start: 1;
+		grid-row-start: 3;
+		grid-row-end: 4;
+		justify-self: center;
+
+		position: relative;
+		top: -35px;
+		left: 0;
+	}
+}
+
+.discover-btn {
+	position: relative;
+	align-self: center;
+	top: 0;
+	left: 0;
+
+	padding: 6px 39px;
+
+	@include media-breakpoint-up(md) {
+		align-self: self-end;
+		top: -56px;
+		left: clamp(0rem, calc(-5.729rem + 11.46vw), 3.438rem);
+	}
+}
