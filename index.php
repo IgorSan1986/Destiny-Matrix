@@ -11,7 +11,7 @@
 
 		<main>
 			<article>
-				<div class="container welcome-block">
+				<div class="container welcome-block d-block-md">
 					<h1>
 						Welcome to the <br />
 						Matrix of Destiny
@@ -132,8 +132,8 @@
 				</div>
 			</article>
 
-			<article class="destiny-matrix-description">
-				<div class="container">
+			<article>
+				<div class="container destiny-matrix-description d-block-sm">
 					<h2>What is the Destiny or Fate Matrix?</h2>
 
 					<p>
@@ -178,8 +178,8 @@
 				</div>
 			</article>
 
-			<article class="our-blog">
-				<div class="container">
+			<article>
+				<div class="container our-blog d-block-md">
 					<h2>Our Blog</h2>
 
 					<div class="our-blog--value">
@@ -315,8 +315,8 @@
 				</div>
 			</article>
 
-			<article class="help-block">
-				<div class="container">
+			<article>
+				<div class="container help-block d-block-md">
 					<h2>Here's how the Destiny Matrix can help you</h2>
 					
 					<ul>
@@ -412,8 +412,8 @@
 				</div>
 			</article>
 
-			<article class="testimonials">
-				<div class="container">
+			<article>
+				<div class="container testimonials d-block-lg">
 					<h2>Testimonials</h2>
 					
 					<ul>
@@ -512,8 +512,8 @@
 				</div>
 			</article>
 
-			<article class="discover-block">
-				<div class="container">
+			<article>
+				<div class="container discover-block d-block-lg">
 					<h2>Discover the power of the <br />Destiny Matrix</h2>
 					<ul>
 						<li class="discover-item1">

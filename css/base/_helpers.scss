@@ -1,0 +1,43 @@
+.d-block-lg {
+	padding: 0 20px;
+}
+
+.d-block-md {
+	padding: 0 20px;
+
+	@include media-breakpoint-up(xs) {
+		padding: 0 30px;
+	}
+
+	@include media-breakpoint-up(md) {
+		padding: 0 50px;
+	}
+
+	@include media-breakpoint-up(lg) {
+		padding: 0 100px;
+	}
+
+	@include media-breakpoint-up(xl) {
+		padding: 0 20px;
+	}
+}
+
+.d-block-sm {
+	padding: 0 20px;
+
+	@include media-breakpoint-up(xs) {
+		padding: 0 30px;
+	}
+
+	@include media-breakpoint-up(md) {
+		padding: 0 83px;
+	}
+
+	@include media-breakpoint-up(lg) {
+		padding: 0 100px;
+	}
+
+	@include media-breakpoint-up(xl) {
+		padding: 0 80px;
+	}
+}
