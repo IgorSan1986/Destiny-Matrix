@@ -1,5 +1,21 @@
-.d-block-lg {
+.d-block-sm {
 	padding: 0 20px;
+
+	@include media-breakpoint-up(xs) {
+		padding: 0 30px;
+	}
+
+	@include media-breakpoint-up(md) {
+		padding: 0 83px;
+	}
+
+	@include media-breakpoint-up(lg) {
+		padding: 0 100px;
+	}
+
+	@include media-breakpoint-up(xl) {
+		padding: 0 80px;
+	}
 }
 
 .d-block-md {
@@ -22,22 +38,18 @@
 	}
 }
 
-.d-block-sm {
+.d-block-lg {
+	padding: 0 20px;
+}
+
+.d-block-xl {
 	padding: 0 20px;
 
 	@include media-breakpoint-up(xs) {
-		padding: 0 30px;
-	}
-
-	@include media-breakpoint-up(md) {
-		padding: 0 83px;
+		padding: 0 40px;
 	}
 
 	@include media-breakpoint-up(lg) {
-		padding: 0 100px;
-	}
-
-	@include media-breakpoint-up(xl) {
-		padding: 0 80px;
+		padding: 0 20px;
 	}
 }

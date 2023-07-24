@@ -59,73 +59,62 @@
 
 	ul {
 		position: relative;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto;
-		column-gap: 90px;
-		row-gap: 0;
+		margin-bottom: 25px;
 
-		@include media-breakpoint-down(md) {
-			margin-bottom: 25px;
+		display: flex;
+		flex-direction: column;
+		row-gap: 25px;
 
-			grid-template-columns: repeat(3, 1fr);
-			column-gap: 0;
-			row-gap: 25px;
+		@include media-breakpoint-up(sm) {
+			margin-bottom: 40px;
 		}
 
-		@include media-breakpoint-down(md) {
+		@include media-breakpoint-up(md) {
 			margin-bottom: 50px;
+		}
 
-			grid-template-columns: repeat(3, 1fr);
-			column-gap: 0;
-			row-gap: 25px;
+		@include media-breakpoint-up(xl) {
+			margin-bottom: 0;
+			row-gap: 0;
 		}
 	}
 }
 
 .discover-item1 {
-	display: inline-grid;
-	grid-column-start: 1;
-	grid-column-end: 3;
-	grid-row-start: 1;
+	width: 72%;
+	align-self: flex-start;
 
 	@include media-breakpoint-up(md) {
-		grid-column-start: 1;
-		grid-row-start: 1;
-		grid-row-end: 2;
+		width: 61%;
+	}
+
+	@include media-breakpoint-up(xl) {
+		width: 45%;
 	}
 }
 
 .discover-item2 {
-	display: inline-grid;
-	grid-column-start: 2;
-	grid-column-end: 4;
-	grid-row-start: 2;
+	width: 65%;
+	align-self: flex-end;
 
 	@include media-breakpoint-up(md) {
-		grid-column-start: 2;
-		grid-row-start: 2;
-		grid-row-end: 3;
+		width: 61%;
+	}
+
+	@include media-breakpoint-up(xl) {
+		width: 45%;
 	}
 }
 
 .discover-item3 {
-	display: inline-grid;
-	grid-column-start: 1;
-	grid-column-end: 4;
-	grid-row-start: 3;
-
-	top: 0;
-	left: 0;
-
 	@include media-breakpoint-up(md) {
-		grid-column-start: 1;
-		grid-row-start: 3;
-		grid-row-end: 4;
-		justify-self: center;
+		width: 61%;
+	}
 
+	@include media-breakpoint-up(xl) {
+		width: 45%;
 		position: relative;
-		top: -35px;
+		top: -50px;
 		left: 0;
 	}
 }
@@ -136,11 +125,20 @@
 	top: 0;
 	left: 0;
 
-	padding: 6px 39px;
+	padding: 9px 39px;
 
 	@include media-breakpoint-up(md) {
-		align-self: self-end;
-		top: -56px;
+		padding: 10px 65px;
+	}
+
+	@include media-breakpoint-up(lg) {
+		padding: 14px 86px;
+		align-self: flex-end;
+	}
+
+	@include media-breakpoint-up(xl) {
+		padding: 17px 109px;
+		top: -75px;
 		left: clamp(0rem, calc(-5.729rem + 11.46vw), 3.438rem);
 	}
 }

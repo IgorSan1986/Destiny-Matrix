@@ -32,7 +32,7 @@
 		display: inline-block;
 		position: absolute;
 		top: -425px;
-		left: clamp(-5.438rem, calc(-12.375rem + 49.33vw), -0.813rem);
+		left: clamp(-3.75rem, calc(-13.205rem + 47.27vw), -2.125rem);
 		width: 402px;
 		height: 414px;
 		opacity: 0.19;
@@ -52,13 +52,13 @@
 			height: auto;
 			top: -40px;
 			left: clamp(25rem, calc(-0.83rem + 53.81vw), 32.5rem);
-			opacity: 0.4;
+			opacity: 0.6;
 		}
 
 		@include media-breakpoint-up(lg) {
 			width: 402px;
 			height: 414px;
-			top: -92px;
+			top: -80px;
 			left: clamp(26.25rem, calc(-12.687rem + 62.8vw), 34.375rem);
 			opacity: 0.8;
 		}

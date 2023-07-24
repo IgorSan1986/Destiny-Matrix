@@ -558,8 +558,8 @@
 				</div>
 			</article>
 
-			<article class="subscribe-block">
-				<div class="container">
+			<article>
+				<div class="container subscribe-block d-block-xl">
 					<h2 class="visually-hidden">
 						Subscription options for you
 					</h2>

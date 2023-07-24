@@ -32,11 +32,12 @@ body {
 	}
 
 	&.home {
-		background-image: url("../../resources/background-svg/background-gradient390.svg");
+		background-color: pink;
+		// background-image: url("../../resources/background-svg/background-gradient390.svg");
 
-		@include media-breakpoint-up(sm) {
-			background-image: url("../../resources/background-svg/background-gradient.svg");
-		}
+		// @include media-breakpoint-up(sm) {
+		// 	background-image: url("../../resources/img/Group 8.webp");
+		// }
 		// @include media-breakpoint-up(sm) {
 		// 	background-image: url("../../resources/background-svg/background-gradient428.svg");
 		// }
@@ -158,10 +159,17 @@ h3 {
 	}
 
 	@include media-breakpoint-up(sm) {
-		padding: 17px 65px;
+		font-size: 15px;
+		padding: 10px 65px;
 	}
 
-	@include media-breakpoint-down(lg) {
+	@include media-breakpoint-up(lg) {
+		font-size: 16px;
+		padding: 14px 86px;
+	}
+
+	@include media-breakpoint-up(xl) {
+		font-size: 16px;
 		padding: 17px 109px;
 	}
 }
@@ -190,17 +198,21 @@ h3 {
 }
 
 .btn-subscribe {
-	padding: 7px 55px;
+	font-size: 13px;
+	padding: 5px 38px;
 
 	font-family: $font-family-inter;
-	font-size: 16px;
+	font-size: 13px;
+	line-height: 2;
 	font-weight: 600;
 
 	border-radius: 11px;
 
-	@include media-breakpoint-down(sm) {
-		font-size: 13px;
-		padding: 5px 38px;
+	@include media-breakpoint-up(sm) {
+		padding: 3px 55px;
+
+		font-size: 16px;
+		line-height: 1.625;
 	}
 }
 

@@ -115,14 +115,4 @@
 			}
 		}
 	}
-
-	button {
-		padding: 6px 46px;
-
-		@include media-breakpoint-up(sm) {
-			button {
-				padding: 6px 46px;
-			}
-		}
-	}
 }
