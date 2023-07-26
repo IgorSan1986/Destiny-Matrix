@@ -28,19 +28,19 @@
 						Start shaping your destiny today!
 					</p>
 
-					<section class="form-date-of-birth" action="">
+					<section class="form form-dates" action="">
 
 						<button id="personal" data-form="form-personal"
-							class="grid-form__item1 form-btn form-btn--active"
-							aria-expanded="true" aria-controls="personal"
+							class="grid-form__item1 form-dates--active"
+							aria-expanded="true" aria-controls="form-personal"
 							type="button"
 						>
 							Personal
 						</button>
 
 						<button id="compatibility" data-form="form-compatibility"
-							class="grid-form__item2 form-btn" 
-							aria-expanded="false" aria-controls="compatibility"
+							class="grid-form__item2" 
+							aria-expanded="false" aria-controls=form-compatibility"
 							type="button"
 						>
 							Compatibility
@@ -52,7 +52,6 @@
 								<li class="grid-list-item1">
 									<label class="visually-hidden" for="name">Enter your name</label>
 									<input id='name'
-										class="form-btn"
 										type="text"
 										id="name"
 										name="name"
@@ -61,7 +60,6 @@
 								</li>
 								<li class="grid-list-item2">
 									<button id='female-btn' data-form="female-button"
-										class="form-btn form-btn--active"
 										type="button"
 									>
 										F
@@ -70,7 +68,7 @@
 								<li class="grid-list-item3">
 									<label class="visually-hidden" for="date">Enter your date of birth</label>
 									<input id='date-of-birth'
-										class="form-btn"
+										class=""
 										type="text"
 										id="date"
 										name="date"
@@ -79,13 +77,14 @@
 								</li>
 								<li class="grid-list-item4">
 									<button id='male-btn' data-form="male-button"
-										class="form-btn" type="button">
+										class="form-dates--active" 
+										type="button">
 										M
 									</button>
 								</li>
 								<li class="grid-list-item5">
 									<button id="calculate-btn"
-										class="form-btn form-btn--active"
+										class="form-dates--active"
 										type="submit"
 									>
 										Calculate
@@ -100,7 +99,6 @@
 								<li class="grid-list-item1 compatibility">
 									<label class="visually-hidden" for="date-partner1">Enter date of birth for partner 1</label>
 									<input
-										class="form-btn"
 										type="text"
 										id="date-partner1"
 										name="date-partner1"
@@ -110,7 +108,6 @@
 								<li class="grid-list-item3 compatibility">
 									<label class="visually-hidden" for="date-partner1">Enter date of birth for partner 1</label>
 									<input
-										class="form-btn"
 										type="text"
 										id="date-partner2"
 										name="date-partner2"
@@ -119,7 +116,7 @@
 								</li>
 								<li class="grid-list-item5  compatibility">
 									<button
-										class="form-btn form-btn--active"
+										class="form-dates--active"
 										type="submit"
 									>
 										Calculate

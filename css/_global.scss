@@ -32,24 +32,15 @@ body {
 	}
 
 	&.home {
-		background-color: pink;
-		// background-image: url("../../resources/background-svg/background-gradient390.svg");
+		background-image: url("../../resources/background-svg/background-gradient-home280px.svg");
 
-		// @include media-breakpoint-up(sm) {
-		// 	background-image: url("../../resources/img/Group 8.webp");
-		// }
-		// @include media-breakpoint-up(sm) {
-		// 	background-image: url("../../resources/background-svg/background-gradient428.svg");
-		// }
+		@include media-breakpoint-up(md) {
+			background-image: url("../../resources/background-svg/background-gradient-home800px.svg");
+		}
+	}
 
-		// @media (max-width: 1281px) {
-		// 	background-image: url("../../resources/background-svg/background-gradient1280.svg");
-		// 	background-size: auto;
-		// }
-
-		// @media (min-width: 1921px) {
-		// 	background-image: url("../../resources/background-svg/background-gradient2560.svg");
-		// }
+	&.login-page {
+		background-image: url("../../resources/background-svg/background-gradient-second280px.svg");
 	}
 }
 
@@ -136,6 +127,7 @@ h3 {
 
 .btn-main {
 	display: inline-block;
+	text-align: center;
 
 	font-size: 13px;
 	line-height: 2;

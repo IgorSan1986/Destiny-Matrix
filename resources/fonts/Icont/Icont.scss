@@ -2,9 +2,9 @@ $Icont-font: "Icont";
 
 @font-face {
     font-family: $Icont-font;
-    src: url("./Icont.eot?c23486dcbba3100d8fda103a297a8e76#iefix") format("embedded-opentype"),
-url("./Icont.woff2?c23486dcbba3100d8fda103a297a8e76") format("woff2"),
-url("./Icont.woff?c23486dcbba3100d8fda103a297a8e76") format("woff");
+    src: url("./Icont.eot?bae056dad7374fcf8eeca0ae207fb762#iefix") format("embedded-opentype"),
+url("./Icont.woff2?bae056dad7374fcf8eeca0ae207fb762") format("woff2"),
+url("./Icont.woff?bae056dad7374fcf8eeca0ae207fb762") format("woff");
 }
 
 i[class^="icont-"]:before, i[class*=" icont-"]:before {
@@ -19,14 +19,26 @@ i[class^="icont-"]:before, i[class*=" icont-"]:before {
 }
 
 $Icont-map: (
-    "facebook": "\f101",
-    "instagram": "\f102",
-    "reddit": "\f103",
-    "youtube": "\f104",
+    "applelogin": "\f101",
+    "facebook": "\f102",
+    "facebooklogin": "\f103",
+    "googlelogin": "\f104",
+    "instagram": "\f105",
+    "reddit": "\f106",
+    "youtube": "\f107",
 );
 
+.icont-applelogin:before {
+    content: map-get($Icont-map, "applelogin");
+}
 .icont-facebook:before {
     content: map-get($Icont-map, "facebook");
+}
+.icont-facebooklogin:before {
+    content: map-get($Icont-map, "facebooklogin");
+}
+.icont-googlelogin:before {
+    content: map-get($Icont-map, "googlelogin");
 }
 .icont-instagram:before {
     content: map-get($Icont-map, "instagram");

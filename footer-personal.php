@@ -1,7 +1,13 @@
-<footer>
+<footer class="footer-personal">
 			<div class="footer-wrapper">
-				<div class="footer-header">
-					<nav class="footer-nav">
+				<div class="footer-personal__header">
+					<nav class="footer-personal__nav">
+						<div class="footer-personal__nav__icons">
+							<a href="#"><i class="icont-reddit"></i></a>
+							<a href="#"><i class="icont-facebook"></i></a>
+							<a href="#"><i class="icont-youtube"></i></a>
+							<a href="#"><i class="icont-instagram"></i></a>
+						</div>
 						<ul>
 							<li>
 								<a href="">Calculation</a>
@@ -20,37 +26,23 @@
 							</li>
 						</ul>
 					</nav>
-					<div class="to-action">
-						<button
-							class="btn-main btn-footer"
-							type="button"
-						>
-							Purchase now
-						</button>
-						<button
-							class="btn-main btn-nav btn-footer"
-							type="button"
-						>
-							Account
-						</button>
-					</div>
 				</div>
 
 				<hr />
 
-				<div class="footer-footer">
-					<div class="footer-footer__icons">
+				<div class="footer-personal__footer">
+					<div class="footer-personal__footer__icons">
 						<a href="#"><i class="icont-reddit"></i></a>
 						<a href="#"><i class="icont-facebook"></i></a>
 						<a href="#"><i class="icont-youtube"></i></a>
 						<a href="#"><i class="icont-instagram"></i></a>
 					</div>
-					<div class="footer-footer__privacy">
+					<div class="footer-personal__footer__privacy">
 						<a href="#">Privacy Policy</a>
 						<a href="#">Terms of use</a>
 					</div>
 					<hr />
-					<div class="footer-footer__copyright">
+					<div class="footer-personal__footer__copyright">
 						<p>Copyright © 2023 Destiny Matrix</p>
 					</div>
 				</div>

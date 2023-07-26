@@ -15,7 +15,7 @@
 							<a href="#">Calculation</a>
 						</li>
 						<li>
-							<a href="#">About</a>
+							<a href="http://localhost/about.php">About</a>
 						</li>
 						<li>
 							<a href="#">Testimonials</a>
@@ -24,19 +24,17 @@
 							<a href="#">Buy</a>
 						</li>
 						<li>
-							<a href="#">Blog</a>
+							<a href="http://localhost/blog.php">Blog</a>
 						</li>
 
 						<li>
-							<button class="btn-main btn-nav--active" type="button">
-								<a href="#">Account</a>
-							</button>
+							<a class="btn-main btn-nav btn-nav--active" href="http://localhost/login.php">Account</a>
 						</li>
 					</ul>
 
-					<button class="btn-main btn-nav" type="button">
-						<a href="#">Account</a>
-					</button>
+					<a class="btn-main btn-nav" href="http://localhost/login.php">
+						Account
+					</a>
 				</nav>
 			</div>
 		</header>

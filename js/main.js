@@ -14,8 +14,11 @@ function toggleGenderButtonActive(buttonId) {
 	const femaleButton = document.getElementById('female-btn')
 	const maleButton = document.getElementById('male-btn')
 
-	femaleButton.classList.toggle('form-btn--active', buttonId === 'female-btn')
-	maleButton.classList.toggle('form-btn--active', buttonId === 'male-btn')
+	femaleButton.classList.toggle(
+		'form-dates--active',
+		buttonId === 'female-btn'
+	)
+	maleButton.classList.toggle('form-dates--active', buttonId === 'male-btn')
 }
 
 // ---
@@ -42,7 +45,7 @@ function toggleGenderButtonActive(buttonId) {
 })()
 
 // ---
-//Form for calculate
+//Form-dates for calculate on home page
 ;(function () {
 	const calculateBtn = document.getElementById('calculate-btn')
 	const genderButtonsContainer = document.getElementById('form-personal')
@@ -64,7 +67,7 @@ function toggleGenderButtonActive(buttonId) {
 		}
 	})
 
-	const formSection = document.querySelector('.form-date-of-birth')
+	const formSection = document.querySelector('.form')
 	formSection.addEventListener('click', event => {
 		const personalButton = document.getElementById('personal')
 		const compatibilityButton = document.getElementById('compatibility')
@@ -78,19 +81,57 @@ function toggleGenderButtonActive(buttonId) {
 
 			if (formId === 'form-personal') {
 				personalButton.setAttribute('aria-expanded', 'true')
-				personalButton.classList.add('form-btn--active')
+				personalButton.classList.add('form-dates--active')
 
 				compatibilityButton.setAttribute('aria-expanded', 'false')
-				compatibilityButton.classList.remove('form-btn--active')
+				compatibilityButton.classList.remove('form-dates--active')
 			} else {
 				personalButton.setAttribute('aria-expanded', 'false')
-				personalButton.classList.remove('form-btn--active')
+				personalButton.classList.remove('form-dates--active')
 
 				compatibilityButton.setAttribute('aria-expanded', 'true')
-				compatibilityButton.classList.add('form-btn--active')
+				compatibilityButton.classList.add('form-dates--active')
 			}
 
 			event.stopPropagation()
 		}
 	})
 })()
+
+// Form Login and Registration
+;(function () {
+	const formSection = document.querySelector('.form-login-registration')
+	console.log(formSection)
+	formSection.addEventListener('click', event => {
+		const loginButton = document.getElementById('login')
+		const registrationButton = document.getElementById('registration')
+
+		if (
+			event.target.matches('#login') ||
+			event.target.matches('#registration')
+		) {
+			const formId = event.target.getAttribute('data-form')
+			toggleForms(formId)
+
+			if (formId === 'form-login') {
+				loginButton.setAttribute('aria-expanded', 'true')
+				loginButton.classList.add('form-login-registration--active')
+
+				registrationButton.setAttribute('aria-expanded', 'false')
+				registrationButton.classList.remove(
+					'form-login-registration--active'
+				)
+			} else {
+				loginButton.setAttribute('aria-expanded', 'false')
+				loginButton.classList.remove('form-login-registration--active')
+
+				registrationButton.setAttribute('aria-expanded', 'true')
+				registrationButton.classList.add(
+					'form-login-registration--active'
+				)
+			}
+
+			event.stopPropagation()
+		}
+	})
+})
