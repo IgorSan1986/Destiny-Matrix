@@ -97,41 +97,72 @@ function toggleGenderButtonActive(buttonId) {
 		}
 	})
 })()
-
-// Form Login and Registration
 ;(function () {
-	const formSection = document.querySelector('.form-login-registration')
-	console.log(formSection)
-	formSection.addEventListener('click', event => {
-		const loginButton = document.getElementById('login')
-		const registrationButton = document.getElementById('registration')
+	const replaceImage = function ($image) {
+		if (!$image || /^data:/.test($image.src)) return
 
-		if (
-			event.target.matches('#login') ||
-			event.target.matches('#registration')
-		) {
-			const formId = event.target.getAttribute('data-form')
-			toggleForms(formId)
+		const xhr = new XMLHttpRequest()
+		xhr.open('GET', $image.src)
+		xhr.onload = function (e) {
+			if (
+				xhr.status === 200 &&
+				!!(xhr.responseXML || {}).documentElement
+			) {
+				const $svg = xhr.responseXML.documentElement
 
-			if (formId === 'form-login') {
-				loginButton.setAttribute('aria-expanded', 'true')
-				loginButton.classList.add('form-login-registration--active')
+				// take over all attributes
+				;[].forEach.call($image.attributes, function (attribute) {
+					// igmore these attributes
+					if (['src'].indexOf(attribute.name) >= 0) return
+					// set classNames
+					else if (attribute.name === 'class')
+						$image.classList.forEach(className =>
+							$svg.classList.add(className)
+						)
+					// set all other attributes
+					else $svg.setAttribute(attribute.name, attribute.value)
+				})
 
-				registrationButton.setAttribute('aria-expanded', 'false')
-				registrationButton.classList.remove(
-					'form-login-registration--active'
-				)
-			} else {
-				loginButton.setAttribute('aria-expanded', 'false')
-				loginButton.classList.remove('form-login-registration--active')
+				$svg.setAttribute('preserveAspectRatio', 'xMidYMid slice')
 
-				registrationButton.setAttribute('aria-expanded', 'true')
-				registrationButton.classList.add(
-					'form-login-registration--active'
-				)
+				$svg.classList.remove('inline-svg', 'lazyload', 'lazyloading')
+
+				// replace image with svg
+				if ($image && $image.parentElement) {
+					$image.parentElement.replaceChild($svg, $image)
+
+					const $figure = $svg.closest('.inline-svg')
+					if ($figure) $figure.classList.remove('inline-svg')
+
+					window.requestAnimationFrame(() =>
+						window.dispatchEvent(
+							new CustomEvent('inline-svg', {detail: $svg})
+						)
+					)
+				}
 			}
-
-			event.stopPropagation()
 		}
+		xhr.send('')
+	}
+
+	let $images // get images
+	$images = document.getElementsByTagName('img')
+	;[].forEach.call($images, function ($image) {
+		if (
+			!(
+				$image.classList.contains('inline-svg') ||
+				$image.closest('.inline-svg')
+			)
+		)
+			return
+
+		replaceImage($image)
+		$image.addEventListener(
+			'load',
+			function (e) {
+				replaceImage(e.target)
+			},
+			{passive: true}
+		)
 	})
-})
+})()

@@ -121,14 +121,10 @@
 		}
 
 		&__privacy {
-			margin-bottom: 26px;
+			margin-bottom: 16px;
 
 			display: flex;
 			column-gap: 18px;
-
-			@include media-breakpoint-up(xs) {
-				margin-bottom: 40px;
-			}
 
 			@include media-breakpoint-up(md) {
 				margin-bottom: 26px;
@@ -143,12 +139,12 @@
 		> hr {
 			display: block;
 			margin: 0 auto;
-			margin-bottom: 26px;
+			margin-bottom: 16px;
 
 			width: clamp(10.625rem, calc(6.921rem + 18.52vw), 11.875rem);
 
 			@include media-breakpoint-up(xs) {
-				margin-bottom: 40px;
+				margin-bottom: 20px;
 			}
 
 			@include media-breakpoint-up(md) {

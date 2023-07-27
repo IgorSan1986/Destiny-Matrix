@@ -1,9 +1,5 @@
-html,
-body {
-	height: 100%;
-}
-
 .page__body {
+	position: relative;
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -32,15 +28,15 @@ body {
 	}
 
 	&.home {
-		background-image: url("../../resources/background-svg/background-gradient-home280px.svg");
+		// background-image: url("../../resources/background-svg/background-gradient-home280px.svg");
 
-		@include media-breakpoint-up(md) {
-			background-image: url("../../resources/background-svg/background-gradient-home800px.svg");
-		}
-	}
+		// 	@include media-breakpoint-up(md) {
+		// 		background-image: url("../../resources/background-svg/background-gradient-home800px.svg");
+		// 	}
+		// }
 
-	&.login-page {
-		background-image: url("../../resources/background-svg/background-gradient-second280px.svg");
+		// &.login-page {
+		// 	background-image: url("../../resources/background-svg/background-gradient-second280px.svg");
 	}
 }
 
@@ -211,4 +207,150 @@ h3 {
 .d-none {
 	// display: none !important;
 	display: none;
+}
+
+.custom-checkbox {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.custom-checkbox + label::before {
+	content: "";
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	flex-shrink: 0;
+	flex-grow: 0;
+	border: 1px solid rgba(0, 0, 0, 0.18);
+	border-radius: 0.25em;
+	margin-right: 0.5em;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50% 50%;
+}
+
+// Styles for checkbox
+.custom-checkbox:checked + label::before {
+	border-color: $secondary-blue;
+	background-color: $secondary-blue;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
+	border-color: #b3d7ff;
+}
+/* styles for the active state of the checkbox (when it is clicked) */
+.custom-checkbox:not(:disabled):active + label::before {
+	background-color: #b3d7ff;
+	border-color: #b3d7ff;
+}
+/* styles for the checkbox in focus */
+.custom-checkbox:focus + label::before {
+	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+/* styles for a checkbox that is in focus and not in checked state */
+.custom-checkbox:focus:not(:checked) + label::before {
+	border-color: #80bdff;
+}
+/* styles for a checkbox in disabled state */
+.custom-checkbox:disabled + label::before {
+	background-color: #e9ecef;
+}
+
+// Custom classes for social icons
+.facebook-login {
+	&:hover {
+		rect {
+			fill: #0c63d4;
+
+			box-shadow:
+				0px 0px 0px 4px #f2f4f7,
+				0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+		}
+	}
+}
+
+// Background overlap SVG
+.overlap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: -1;
+	overflow: hidden;
+
+	> div {
+		position: absolute;
+		left: 0;
+		right: 0;
+	}
+
+	&-top {
+		top: 0;
+
+		> div {
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+		}
+
+		#top-left {
+			// transform: translate(-10%, -12%);
+			scale: calc(2.1);
+		}
+
+		#top-right {
+			// transform: translate(-1%, 16%);
+			scale: calc(1.8);
+		}
+
+		#top-circle {
+			// transform: translate(11%, 7%);
+			scale: calc(1.7);
+		}
+	}
+
+	&-mid {
+		top: 50%;
+		transform: translateY(-50%);
+		> div {
+			position: absolute;
+			// left: 0;
+			// top: 50%;
+			// right: 0;
+		}
+
+		#mid-rose {
+			transform: translate(0%, 0%);
+			scale: calc(2.3);
+		}
+
+		#mid-yellow {
+			transform: translate(0%, 0%);
+			scale: calc(1.8);
+		}
+	}
+
+	&-bottom {
+		bottom: 0;
+		> div {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			right: 0;
+		}
+
+		#bottom-violet {
+			transform: translate(0%, 0%);
+			scale: calc(2.2);
+		}
+
+		#bottom-pink {
+			transform: translate(0%, 0%);
+			scale: calc(2);
+		}
+	}
 }

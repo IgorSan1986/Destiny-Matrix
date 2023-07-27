@@ -1,0 +1,35 @@
+.registration-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin-bottom: 160px;
+
+	p {
+		align-self: flex-start;
+		margin-bottom: 34px;
+
+		@include media-breakpoint-up(md) {
+			margin-bottom: 44px;
+		}
+	}
+
+	.form-login-registration {
+		margin-bottom: 14px;
+	}
+
+	.social-login {
+		& > p {
+			align-self: center;
+		}
+
+		ul {
+			margin-bottom: 0px;
+		}
+	}
+}
+
+.checkbox {
+	align-self: flex-start;
+	margin-bottom: 42px;
+}

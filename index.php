@@ -7,6 +7,42 @@
 		<title>Destiny matrix</title>
 	</head>
 	<body class="page__body home">
+		<div class="overlap">
+			<div class="overlap-top">
+				<div class="inline-svg">
+					<img src="/resources/background-svg/top1.svg" alt="background top1">
+				</div>
+				
+				<div class="inline-svg">
+					<img src="/resources/background-svg/top3.svg" alt="background top3">
+				</div>
+				
+				<div class="inline-svg">
+					<img src="/resources/background-svg/top2.svg" alt="background top2">
+				</div>
+
+			</div>
+			<div class="overlap-mid">
+				<div class="inline-svg">
+					<img src="/resources/background-svg/mid-rose.svg" alt="background middle 1">
+				</div>
+
+				<div class="inline-svg">
+					<img src="/resources/background-svg/mid-yellow.svg" alt="background middle 2">
+				</div>
+
+			</div>
+
+			<div class="overlap-bottom">
+				<div class="inline-svg">
+					<img src="/resources/background-svg/bottom-violet.svg" alt="background bottom 1">
+				</div>
+
+				<div class="inline-svg">
+					<img src="/resources/background-svg/bottom-pink.svg" alt="background bottom 2">
+				</div>
+			</div>
+		</div>
 	<?php include 'header.php'; ?>
 
 		<main>
