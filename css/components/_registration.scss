@@ -5,17 +5,26 @@
 
 	margin-bottom: 160px;
 
+	@include media-breakpoint-up(md) {
+		align-items: flex-start;
+	}
+
+	@include media-breakpoint-up(lg) {
+		margin-bottom: 50px;
+	}
+
 	p {
 		align-self: flex-start;
 		margin-bottom: 34px;
 
+		@include media-breakpoint-up(sm) {
+			align-self: center;
+		}
+
 		@include media-breakpoint-up(md) {
+			align-self: flex-start;
 			margin-bottom: 44px;
 		}
-	}
-
-	.form-login-registration {
-		margin-bottom: 14px;
 	}
 
 	.social-login {
@@ -31,5 +40,6 @@
 
 .checkbox {
 	align-self: flex-start;
-	margin-bottom: 42px;
+	margin-bottom: 26px;
+	flex-basis: 100%;
 }

@@ -617,7 +617,7 @@
 					</h2>
 					
 					<div class="subscribe-block__wrapper">
-						<article>
+						<article class="subscribe-card">
 							<h3>First try</h3>
 							<ul>
 								<li>
@@ -656,7 +656,7 @@
 								Purchase
 							</button>
 						</article>
-						<article>
+						<article class="subscribe-card">
 							<h3>A month together</h3>
 							<ul>
 								<li>
@@ -683,7 +683,7 @@
 								Purchase
 							</button>
 						</article>
-						<article>
+						<article class="subscribe-card">
 							<h3>Annual access</h3>
 							<ul>
 								<li>

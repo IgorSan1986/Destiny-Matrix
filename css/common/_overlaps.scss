@@ -1,0 +1,265 @@
+// Background overlap SVG
+.overlap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: -1;
+	overflow: hidden;
+
+	> div {
+		position: absolute;
+		left: 0;
+		right: 0;
+	}
+
+	&-top {
+		top: 0;
+
+		> div {
+			position: absolute;
+			top: 0;
+		}
+	}
+
+	&-mid {
+		top: 50%;
+		transform: translateY(-50%);
+		> div {
+			position: absolute;
+		}
+	}
+
+	&-bottom {
+		bottom: 0;
+		> div {
+			bottom: 0;
+		}
+	}
+}
+
+.home {
+	.overlap {
+		&-top {
+			#top1mobile {
+				transform: translate(5%, 7%);
+				scale: calc(3.1);
+
+				@include media-breakpoint-up(md) {
+					transform: translate(-17%, 0);
+					scale: calc(2.1);
+				}
+
+				@include media-breakpoint-up(lg) {
+					display: none;
+				}
+			}
+
+			#top-left {
+				display: none;
+
+				@include media-breakpoint-up(lg) {
+					display: block;
+					transform: translate(-12%, -10%);
+					scale: calc(2.4);
+				}
+
+				@include media-breakpoint-up(xxxl) {
+					transform: translate(-10%, -18%);
+					scale: calc(2);
+				}
+			}
+
+			#top2mobile {
+				transform: translate(-4%, 14%);
+				scale: calc(3.1);
+
+				@include media-breakpoint-up(md) {
+					transform: translate(6%, -1%);
+					scale: calc(1.6);
+				}
+				@include media-breakpoint-up(lg) {
+					display: none;
+				}
+			}
+
+			#top-right {
+				display: none;
+				@include media-breakpoint-up(lg) {
+					display: block;
+					transform: translate(2%, 21%);
+					scale: calc(1.8);
+				}
+
+				@include media-breakpoint-up(xxxl) {
+					transform: translate(3%, 5%);
+				}
+			}
+
+			#top-circle {
+				display: none;
+
+				@include media-breakpoint-up(lg) {
+					display: block;
+					transform: translate(11%, 7%);
+					scale: calc(1.7);
+				}
+
+				@include media-breakpoint-up(xxxl) {
+					transform: translate(14%, -8%);
+				}
+			}
+		}
+
+		&-mid {
+			#middle1mobile {
+				transform: translate(-3%, -60%);
+				scale: calc(2);
+
+				@include media-breakpoint-up(md) {
+					transform: translate(-0%, -58%);
+					scale: calc(2.1);
+				}
+
+				@include media-breakpoint-up(lg) {
+					display: none;
+				}
+			}
+
+			#mid-rose {
+				display: none;
+
+				@include media-breakpoint-up(lg) {
+					display: block;
+					transform: translate(-11%, -46%);
+					scale: calc(2.3);
+				}
+
+				@include media-breakpoint-up(xxxl) {
+					transform: translate(-8%, -36%);
+					scale: calc(2.2);
+				}
+			}
+
+			#middle2mobile {
+				display: block;
+				transform: translate(0%, 65%);
+				scale: calc(3.5);
+
+				@include media-breakpoint-up(xs) {
+					transform: translate(0%, 41%);
+					scale: calc(3.5);
+				}
+
+				@include media-breakpoint-up(md) {
+					transform: translate(7%, 30%);
+					scale: calc(2.4);
+				}
+
+				@include media-breakpoint-up(lg) {
+					display: none;
+				}
+
+				@include media-breakpoint-up(xxxl) {
+					transform: translate(6%, -31%);
+				}
+			}
+
+			#mid-yellow {
+				display: none;
+
+				@include media-breakpoint-up(lg) {
+					display: block;
+					transform: translate(0%, -38%);
+					scale: calc(1.8);
+				}
+
+				@include media-breakpoint-up(xxxl) {
+					transform: translate(6%, -31%);
+				}
+			}
+		}
+
+		&-bottom {
+			#bottommobile {
+				transform: translate(-6%, -42%);
+				scale: calc(4.5);
+
+				@include media-breakpoint-up(xs) {
+					transform: translate(-6%, -31%);
+					scale: calc(3.5);
+				}
+
+				@include media-breakpoint-up(md) {
+					transform: translate(-3%, -15%);
+					scale: calc(2.3);
+				}
+
+				@include media-breakpoint-up(lg) {
+					display: none;
+				}
+			}
+
+			#bottom-violet {
+				display: none;
+
+				@include media-breakpoint-up(lg) {
+					display: block;
+					transform: translate(-9%, -47%);
+					scale: calc(2.3);
+				}
+
+				@include media-breakpoint-up(xxxl) {
+					transform: translate(-9%, -22%);
+					scale: calc(2.3);
+				}
+			}
+
+			#bottom-pink {
+				display: none;
+
+				@include media-breakpoint-up(lg) {
+					display: block;
+					transform: translate(3%, -47%);
+					scale: calc(2);
+				}
+
+				@include media-breakpoint-up(xxxl) {
+					transform: translate(14%, -36%);
+					scale: calc(1.3);
+				}
+			}
+		}
+	}
+}
+
+.secondary-bg {
+	.overlap {
+		&-top {
+			#personal-top {
+				transform: translate(5%, 0%);
+				scale: calc(3.5);
+
+				@include media-breakpoint-up(lg) {
+					transform: translate(30%, -22%);
+					scale: calc(2);
+				}
+			}
+		}
+
+		&-bottom {
+			top: 0;
+
+			#personal-bottom {
+				transform: translate(-8%, 15%);
+				scale: calc(3.6);
+
+				@include media-breakpoint-up(lg) {
+					transform: translate(-21%, 1%);
+					scale: calc(2);
+				}
+			}
+		}
+	}
+}

@@ -5,11 +5,24 @@
 
 	margin-bottom: 140px;
 
+	@include media-breakpoint-up(md) {
+		align-items: flex-start;
+	}
+
+	@include media-breakpoint-up(lg) {
+		margin-bottom: 70px;
+	}
+
 	p {
 		align-self: flex-start;
 		margin-bottom: 34px;
 
+		@include media-breakpoint-up(sm) {
+			align-self: center;
+		}
+
 		@include media-breakpoint-up(md) {
+			align-self: flex-start;
 			margin-bottom: 44px;
 		}
 	}
@@ -17,11 +30,28 @@
 
 .login-title {
 	margin-bottom: 10px;
-
 	align-self: flex-start;
 
+	font-size: clamp(0.938rem, calc(0.833rem + 0.52vw), 1.25rem);
+	line-height: 1.733;
+
+	@include media-breakpoint-up(sm) {
+		align-self: center;
+	}
+
 	@include media-breakpoint-up(md) {
+		align-self: flex-start;
 		margin-bottom: 20px;
+	}
+
+	@include media-breakpoint-up(lg) {
+		font-weight: 400;
+	}
+}
+
+.login-registration {
+	&::after {
+		top: -44px;
 	}
 }
 

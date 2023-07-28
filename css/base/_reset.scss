@@ -93,15 +93,16 @@ input[type="submit"] {
 	cursor: pointer;
 }
 
+a:focus,
+button:focus,
 input:focus,
 input:active,
 button:active {
 	outline: none;
 }
 
-a:focus,
 button:focus {
-	outline: dashed 1px rgba(0, 0, 0, 0.3);
+	outline: dashed 2px rgba(242, 244, 247, 0.6);
 }
 
 button::-moz-focus-inner {

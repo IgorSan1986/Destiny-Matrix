@@ -27,6 +27,7 @@ $color-gray: #cdd1d4;
 $color-dark-gray: #091133;
 $color-dark-gray-text: #5d6970;
 $color-light-gray: #f2f2f2;
+$color-soft-light-gray: rgba(242, 244, 247, 0.8);
 $color-soft-pink: #ebd9ef;
 
 $primary-black: $color-dark-gray;
@@ -35,6 +36,7 @@ $primary-blue: $color-gray-blue;
 $secondary-blue: $color-blue;
 $secondary-black: $color-black;
 $footer-bg: $color-soft-pink;
+$shadow-btn: $color-soft-light-gray;
 
 //Icons
 $Icont: ();
