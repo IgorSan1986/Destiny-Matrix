@@ -12,6 +12,10 @@
 				<div class="inline-svg">
 					<img src="/resources/background-svg/top1.svg" alt="background top1">
 				</div>
+
+				<div class="inline-svg">
+					<img src="/resources/background-svg/top1mobile.svg" alt="background top1">
+				</div>
 				
 				<div class="inline-svg">
 					<img src="/resources/background-svg/top3.svg" alt="background top3">
@@ -21,6 +25,10 @@
 					<img src="/resources/background-svg/top2.svg" alt="background top2">
 				</div>
 
+				<div class="inline-svg">
+					<img src="/resources/background-svg/top2mobile.svg" alt="background top3">
+				</div>
+
 			</div>
 			<div class="overlap-mid">
 				<div class="inline-svg">
@@ -28,14 +36,25 @@
 				</div>
 
 				<div class="inline-svg">
-					<img src="/resources/background-svg/mid-yellow.svg" alt="background middle 2">
+					<img src="/resources/background-svg/middle1mobile.svg" alt="background middle 1">
 				</div>
 
+				<div class="inline-svg">
+					<img src="/resources/background-svg/mid-yellow.svg" alt="background middle 2">
+				</div>
+				
+				<div class="inline-svg">
+					<img src="/resources/background-svg/middle2mobile.svg" alt="background middle 2">
+				</div>
 			</div>
 
 			<div class="overlap-bottom">
 				<div class="inline-svg">
 					<img src="/resources/background-svg/bottom-violet.svg" alt="background bottom 1">
+				</div>
+
+				<div class="inline-svg">
+					<img src="/resources/background-svg/bottommobile.svg" alt="background bottom 1">
 				</div>
 
 				<div class="inline-svg">

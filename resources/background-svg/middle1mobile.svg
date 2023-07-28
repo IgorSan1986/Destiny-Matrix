@@ -1,0 +1,14 @@
+<svg id="middle1mobile" width="1420" height="2403" viewBox="0 0 1420 2403" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g>
+<g id="Vector 4" filter="url(#filter0_f_499_94)">
+<path d="M540.707 624.577C817.796 465.866 1075.44 376.927 978.707 441.076C919.697 480.209 1024.21 836.077 943.707 1115.58C813.582 1190.99 684.011 1828.68 644.207 1943.58C542.137 2238.21 261.306 784.612 540.707 624.577Z" fill="#E8598A" fill-opacity="0.7"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_499_94" x="0.342285" y="0.0751953" width="1419.12" height="2402.8" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="210" result="effect1_foregroundBlur_499_94"/>
+</filter>
+</defs>
+</svg>

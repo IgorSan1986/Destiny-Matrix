@@ -49,7 +49,7 @@
 			@include media-breakpoint-up(sm) {
 				width: 343px;
 				height: 520px;
-				padding: 24px 10px;
+				padding: 0 10px 24px;
 
 				border-radius: 30px;
 			}
@@ -57,13 +57,11 @@
 			@include media-breakpoint-up(md) {
 				width: 305px;
 				height: 520px;
-				padding: 24px 10px;
 			}
 
 			@include media-breakpoint-up(lg) {
 				width: clamp(19.063rem, calc(8.579rem + 16.91vw), 21.25rem);
 				height: 520px;
-				padding: 24px 10px;
 			}
 
 			@include media-breakpoint-up(xl) {
@@ -77,13 +75,11 @@
 			}
 
 			h3 {
-				padding-top: 14px;
+				padding-top: 12px;
 				line-height: 1.5;
 
 				@include media-breakpoint-up(sm) {
-					margin-bottom: 24px;
-					padding-top: 0;
-					line-height: 2;
+					line-height: 2.1;
 				}
 
 				@include media-breakpoint-up(lg) {
