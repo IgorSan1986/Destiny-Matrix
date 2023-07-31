@@ -206,7 +206,7 @@
 
 				@include media-breakpoint-up(lg) {
 					display: block;
-					transform: translate(-9%, -47%);
+					transform: translate(-9%, 0%);
 					scale: calc(2.3);
 				}
 
@@ -252,11 +252,15 @@
 			top: 0;
 
 			#personal-bottom {
-				transform: translate(-8%, 15%);
+				transform: translate(-10%, 42%);
 				scale: calc(3.6);
 
+				@include media-breakpoint-up(sm) {
+					transform: translate(-10%, 20%);
+				}
+
 				@include media-breakpoint-up(lg) {
-					transform: translate(-21%, 1%);
+					transform: translate(-21%, 19.3%);
 					scale: calc(2);
 				}
 			}

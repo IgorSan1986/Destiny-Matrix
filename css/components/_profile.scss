@@ -1,0 +1,398 @@
+.profile-page {
+	.form-dates {
+		@include media-breakpoint-up(sm) {
+			width: 75%;
+		}
+
+		@include media-breakpoint-up(md) {
+			width: 100%;
+		}
+
+		&::after {
+			display: none;
+		}
+
+		&--active {
+			@include media-breakpoint-up(lg) {
+				color: $primary-white;
+				background-color: $secondary-blue;
+			}
+		}
+	}
+}
+
+.tabs {
+	width: 100%;
+}
+
+.tabcontainer {
+	margin-bottom: 100px;
+	gap: 34px;
+
+	@include media-breakpoint-up(sm) {
+		gap: 44px;
+	}
+
+	@include media-breakpoint-up(md) {
+		gap: clamp(2.188rem, calc(-44.401rem + 97.06vw), 8.375rem);
+	}
+
+	@include media-breakpoint-up(lg) {
+		gap: 60px;
+	}
+
+	.tabheader > li > p {
+		font-size: 16px;
+
+		@include media-breakpoint-up(md) {
+			font-size: 18px;
+		}
+	}
+
+	.tabcontent {
+		width: 100%;
+
+		@include media-breakpoint-up(sm) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		@include media-breakpoint-up(md) {
+			align-items: flex-start;
+		}
+
+		@include media-breakpoint-up(lg) {
+			padding-left: 74px;
+		}
+
+		&:nth-child(5) {
+			@include media-breakpoint-up(sm) {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			@include media-breakpoint-up(md) {
+				align-items: flex-start;
+			}
+		}
+
+		&:not(.active) {
+			display: none;
+		}
+
+		&__subscription {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-content: flex-start;
+			color: $color-black;
+
+			@include media-breakpoint-up(lg) {
+				padding-left: 0;
+			}
+
+			&__description {
+				margin-bottom: 20px;
+
+				font-size: 13px;
+				line-height: 1.7;
+
+				@include media-breakpoint-up(sm) {
+					text-align: center;
+					width: 90%;
+				}
+
+				@include media-breakpoint-up(md) {
+					text-align: start;
+				}
+
+				@include media-breakpoint-up(lg) {
+					margin-bottom: 44px;
+					flex-basis: 75%;
+				}
+			}
+
+			h4 {
+				font-size: 14px;
+
+				@include media-breakpoint-up(sm) {
+					font-size: 15px;
+				}
+
+				@include media-breakpoint-up(md) {
+					font-size: 16px;
+				}
+
+				@include media-breakpoint-up(lg) {
+					font-size: 20px;
+				}
+			}
+
+			&__plans {
+				margin-bottom: 30px;
+				flex-basis: 100%;
+			}
+		}
+
+		&__title {
+			margin-bottom: 5px;
+
+			font-size: 15px;
+			font-weight: 400;
+
+			@include media-breakpoint-up(sm) {
+				font-size: 18px;
+			}
+
+			@include media-breakpoint-up(md) {
+				font-size: 20px;
+			}
+
+			@include media-breakpoint-up(lg) {
+				font-size: 24px;
+			}
+
+			&__subscription {
+				margin-bottom: 20px;
+
+				@include media-breakpoint-up(sm) {
+					text-align: center;
+				}
+
+				@include media-breakpoint-up(md) {
+					text-align: start;
+				}
+
+				h3 {
+					margin-bottom: 0;
+				}
+			}
+
+			&.calculator-title {
+				margin-bottom: 36px;
+
+				@include media-breakpoint-up(md) {
+					margin-bottom: 48px;
+				}
+
+				@include media-breakpoint-up(lg) {
+					margin-bottom: 72px;
+				}
+			}
+		}
+
+		&__subtitle {
+			margin-bottom: 36px;
+
+			color: $color-black-tabs;
+			opacity: 0.74;
+		}
+
+		&__label {
+			font-size: 12px;
+			line-height: 2;
+			color: $color-black;
+			opacity: 0.74;
+
+			@include media-breakpoint-up(sm) {
+				font-size: 13px;
+			}
+
+			@include media-breakpoint-up(md) {
+				font-size: 14px;
+			}
+		}
+
+		&__plan {
+			.subscribe-block__wrapper {
+				margin-bottom: 80px;
+				gap: 16px;
+
+				@include media-breakpoint-up(md) {
+					display: flex;
+					flex-wrap: wrap;
+				}
+
+				@include media-breakpoint-up(xl) {
+					gap: 10px;
+				}
+
+				@include media-breakpoint-up(xxl) {
+					gap: clamp(1.875rem, calc(0.192rem + 1.92vw), 2.5rem);
+				}
+				.subscribe-card {
+					height: auto;
+
+					@include media-breakpoint-up(md) {
+						width: 344px;
+						height: auto;
+					}
+
+					@include media-breakpoint-up(lg) {
+						width: clamp(15.75rem, calc(-5.216rem + 33.82vw), 20.125rem);
+						height: 460px;
+					}
+
+					@include media-breakpoint-up(xl) {
+						width: 218px;
+						height: 507px;
+						padding-top: 0;
+					}
+
+					@include media-breakpoint-up(xxl) {
+						width: 266px;
+						height: 480px;
+						padding-top: 0;
+					}
+
+					ul {
+						@include media-breakpoint-up(sm) {
+							margin-bottom: 44px;
+						}
+
+						@include media-breakpoint-up(md) {
+							margin-bottom: 26px;
+						}
+					}
+
+					h3 {
+						margin-bottom: 2px;
+						font-size: 16px;
+					}
+
+					ul > li > p {
+						@include media-breakpoint-up(lg) {
+							font-size: 12px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.user-form {
+	&:nth-child(4) {
+		margin-bottom: 12px;
+	}
+
+	&__input {
+		margin-bottom: 15px;
+	}
+
+	&__input:nth-child(5) {
+		margin-bottom: 12px;
+	}
+
+	&__label {
+		margin-bottom: 5px;
+
+		font-size: 12px;
+		line-height: 2.16;
+
+		color: $color-black-tabs;
+		opacity: 0.74;
+	}
+
+	&__checkbox {
+		font-size: 12px;
+		line-height: 2.16;
+
+		margin-bottom: 26px;
+	}
+
+	&__btn {
+		margin-bottom: 15px;
+	}
+}
+
+.saved-tab {
+	display: flex;
+	gap: 20px;
+}
+
+.support {
+	.tabcontent__title {
+		margin-bottom: 20px;
+	}
+
+	.tabcontent__subtitle {
+		margin-bottom: 0px;
+	}
+
+	& > p {
+		margin-bottom: 36px;
+
+		@include media-breakpoint-up(sm) {
+			text-align: center;
+		}
+
+		@include media-breakpoint-up(md) {
+			text-align: start;
+		}
+	}
+
+	&-form {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+}
+
+.share {
+	display: flex;
+	flex-direction: column;
+
+	.tabcontent__title {
+		margin-bottom: 0;
+
+		@include media-breakpoint-up(sm) {
+			margin-bottom: 20px;
+		}
+	}
+
+	.tabcontent__subscription__description {
+		margin-bottom: 20px;
+
+		@include media-breakpoint-up(md) {
+			margin-bottom: 40px;
+		}
+	}
+
+	&-form {
+		display: flex;
+		flex-direction: column;
+		gap: 22px;
+
+		@include media-breakpoint-up(sm) {
+			width: 80%;
+		}
+	}
+}
+
+.rating {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+}
+
+.rating input[type="radio"] {
+	display: none;
+}
+
+.rating label {
+	direction: ltr;
+	display: inline-block;
+	width: 32px;
+	height: 29px;
+	background-image: url("/resources/svg/Starempty.svg");
+	background-size: cover;
+	cursor: pointer;
+}
+
+.rating input[type="radio"]:checked ~ label {
+	direction: ltr;
+	background-image: url("/resources/svg/Starfull.svg");
+}

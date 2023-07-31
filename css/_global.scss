@@ -1,3 +1,7 @@
+html {
+	height: 100%;
+}
+
 .page__body {
 	position: relative;
 	min-height: 100%;
@@ -12,11 +16,6 @@
 	color: $primary-blue;
 
 	background-color: rgba(255, 255, 255, 1);
-
-	background-position: top center;
-	background-repeat: no-repeat;
-	background-attachment: local;
-	background-size: cover;
 
 	@include media-breakpoint-up(sm) {
 		font-size: 14px;
@@ -44,6 +43,10 @@ main {
 	@include media-breakpoint-up(xl) {
 		max-width: 1020px;
 		margin: 0 auto;
+	}
+
+	@include media-breakpoint-up(xxl) {
+		max-width: 1200px;
 	}
 }
 
@@ -150,51 +153,25 @@ h3 {
 	}
 }
 
-.btn-nav {
-	display: inline-block;
-	text-align: center;
-
-	padding: 7px 29px;
-
-	font-size: 13px;
-	line-height: 1;
-	color: $secondary-blue;
-
-	background-color: #fff;
-
-	@include media-breakpoint-up(sm) {
-		padding: 10px 40px;
-		font-size: 16px;
-	}
-
-	@include media-breakpoint-up(md) {
-		font-size: 18px;
-		padding: 15px 65px;
-	}
-}
-
-.btn-subscribe {
-	font-size: 13px;
-	padding: 5px 38px;
-
-	font-family: $font-family-inter;
-	font-size: 13px;
-	line-height: 2;
-	font-weight: 600;
-
-	border-radius: 11px;
-
-	@include media-breakpoint-up(sm) {
-		padding: 3px 55px;
-
-		font-size: 16px;
-		line-height: 1.625;
-	}
-}
-
 .d-none {
-	// display: none !important;
-	display: none;
+	display: none !important;
+}
+
+.d-block {
+	display: block;
+}
+
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+@keyframes fade {
+	from {
+		opacity: 0.1;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 // Custom classes for social icons
@@ -214,4 +191,8 @@ h3 {
 	&:hover {
 		fill: #0c63d4;
 	}
+}
+
+.checkbox {
+	color: $color-black;
 }

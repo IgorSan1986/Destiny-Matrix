@@ -72,7 +72,11 @@
 
 		display: flex;
 		flex-wrap: wrap;
-		gap: 52px;
+		gap: 40px;
+
+		@include media-breakpoint-up(xs) {
+			gap: 52px;
+		}
 
 		li {
 			line-height: 0;

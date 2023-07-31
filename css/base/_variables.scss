@@ -20,10 +20,13 @@ $breakpoints: (
 //Colors
 $color-white: #fff;
 $color-black: #000;
+$color-black-tabs: #091133;
+$color-black-tabs-border: rgba(0, 0, 0, 0.18);
 $color-blue: #0c51d6;
 $color-gray-blue: #505f98;
 $color-dark-blue: #222f65;
 $color-gray: #cdd1d4;
+$color-gray-dropdown: #a4a29d;
 $color-dark-gray: #091133;
 $color-dark-gray-text: #5d6970;
 $color-light-gray: #f2f2f2;
@@ -49,3 +52,9 @@ $Icont: ();
 		)
 	);
 }
+
+// Transition
+$transition-02: 0.2s ease;
+$transition-03: 0.3s ease;
+$transition-04: 0.4s ease;
+$transition-05: 0.5s ease;

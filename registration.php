@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
-		<title>Destiny matrix | Log in</title>
+		<title>Destiny matrix | Registration</title>
 	</head>
 	<body class="page__body login-page secondary-bg">
 		<div class="overlap">
@@ -36,7 +36,6 @@
 					<div class="login-registration__btn">
 						<a href="http://localhost/login.php">
 							<button id="login" data-form="form-login"
-								class="grid-form__item1"
 								aria-expanded="false" aria-controls="form-login"
 								type="button"
 							>
@@ -48,7 +47,7 @@
 					<div class="login-registration__btn">
 						<a href="http://localhost/registration.php">
 							<button id="registration" data-form="form-registration"
-								class="grid-form__item2 login-registration--active" 
+								class="login-registration--active" 
 								aria-expanded="true" aria-controls="form-registration"
 								type="button"
 							>
@@ -66,7 +65,7 @@
 								type="text"
 								id="name"
 								name="name"
-								placeholder="name*"
+								placeholder="Name*"
 							/>
 						</div>
 	

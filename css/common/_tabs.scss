@@ -1,0 +1,40 @@
+.tabcontainer {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 0 auto;
+
+	@include media-breakpoint-up(md) {
+		flex-direction: row;
+	}
+}
+
+.tabcontent {
+	width: 100%;
+	position: relative;
+}
+
+.tabheader__items {
+	display: none;
+
+	@include media-breakpoint-up(md) {
+		display: block;
+		position: relative;
+		width: 245px;
+		padding: 0;
+		flex-shrink: 0;
+	}
+}
+.tabheader__item {
+	font-weight: 700;
+	font-size: 18px;
+	font-weight: 300;
+	margin-top: 10px;
+	color: $color-black-tabs;
+	cursor: pointer;
+	transition: 0.3s all;
+
+	&.active {
+		border-bottom: 1px solid $color-black-tabs-border;
+	}
+}

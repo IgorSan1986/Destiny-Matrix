@@ -1,10 +1,5 @@
 .form {
 	position: relative;
-	width: 100%;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto;
-	gap: 15px;
 
 	font-size: 14px;
 	font-family: $font-family-mulish;
@@ -31,14 +26,13 @@
 	input[type="text"],
 	input[type="email"],
 	input[type="tel"],
-	input[type="password"],
-	textarea {
+	input[type="password"] {
 		width: 100%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 
-		padding: 8px;
+		padding: 8px 14px;
 
 		font-family: $font-family-mulish;
 		font-weight: 300;
@@ -48,7 +42,30 @@
 		border: 1px solid rgba(0, 0, 0, 0.18);
 
 		&::placeholder {
-			padding: 0 14px;
+			color: $secondary-black;
+		}
+
+		@include media-breakpoint-up(md) {
+			font-size: 16px;
+		}
+	}
+
+	textarea {
+		width: 100%;
+		display: flex;
+		align-items: flex-start;
+		padding: 8px 14px;
+
+		font-family: $font-family-mulish;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 26px;
+
+		color: $secondary-black;
+		border-radius: 15px;
+		border: 1px solid rgba(0, 0, 0, 0.18);
+
+		&::placeholder {
 			color: $secondary-black;
 		}
 
@@ -84,6 +101,12 @@
 
 // Form dates on home page
 .form-dates {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	gap: 15px;
+
 	border-radius: 15px;
 	color: $secondary-black;
 
@@ -232,8 +255,7 @@
 	input[type="text"],
 	input[type="email"],
 	input[type="tel"],
-	input[type="password"],
-	textarea {
+	input[type="password"] {
 		border-radius: 999px;
 	}
 
@@ -290,4 +312,19 @@
 
 #form-login {
 	margin-bottom: 15px;
+}
+
+.user-form {
+	button,
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	input[type="password"] {
+		border-radius: 999px;
+	}
+
+	&--active {
+		color: $primary-white;
+		background-color: $secondary-blue;
+	}
 }

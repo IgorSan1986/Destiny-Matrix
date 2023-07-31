@@ -5,10 +5,12 @@
 @import "./common/checkbox";
 @import "./common/nav-bar";
 @import "./common/forms";
+@import "./common/tabheader-mobile";
+@import "./common/tabs";
+@import "./common/dropdown-menu-btn";
+@import "./common/cards-subscription";
 
 @import "./components/header";
-@import "./components/login";
-@import "./components/registration";
 @import "./components/welcome-block";
 @import "./components/destiny-description-block";
 @import "./components/our-blog";
@@ -17,4 +19,7 @@
 @import "./components/discover-block";
 @import "./components/subscribe-block";
 @import "./components/footer";
+@import "./components/login";
+@import "./components/registration";
 @import "./components/_footer-personal";
+@import "./components/_profile";

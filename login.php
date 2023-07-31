@@ -34,7 +34,7 @@
 					<div class="login-registration__btn">
 						<a href="http://localhost/login.php">
 							<button id="login" data-form="form-login"
-								class="grid-form__item1 login-registration--active"
+								class="login-registration--active"
 								aria-expanded="true" aria-controls="form-login"
 								type="button"
 							>
@@ -46,7 +46,6 @@
 					<div class="login-registration__btn">
 						<a href="http://localhost/registration.php">
 							<button id="registration" data-form="form-registration"
-								class="grid-form__item2" 
 								aria-expanded="false" aria-controls="registration"
 								type="button"
 							>
@@ -69,8 +68,7 @@
 						</div>
 						<div class="form-login-registration__item2">
 							<label class="visually-hidden" for="password">Enter your password</label>
-							<input id='password'
-							
+							<input
 								type="password"
 								id="password"
 								name="password"
