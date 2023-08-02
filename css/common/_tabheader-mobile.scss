@@ -66,6 +66,10 @@
 		@include media-breakpoint-up(sm) {
 			font-size: 16px;
 		}
+
+		&:last-child {
+			margin-bottom: 26px;
+		}
 	}
 
 	.custom-select-option.is-selected::before {
@@ -74,7 +78,8 @@
 	}
 
 	.custom-select-option.has-focus {
-		margin: 0 -1.5em;
+		margin-left: -1.5em;
+		margin-right: -1.5em;
 		padding: 0.5em 1.7em;
 		background-color: $color-light-gray;
 	}
