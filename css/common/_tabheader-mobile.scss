@@ -16,7 +16,7 @@
 		border-bottom: 1px solid $color-black-tabs-border;
 
 		&::after {
-			content: "";
+			content: '';
 			display: block;
 			width: 16px;
 			height: 2px;
@@ -30,7 +30,7 @@
 		}
 
 		&::before {
-			content: "";
+			content: '';
 			display: block;
 			width: 2px;
 			height: 16px;
@@ -59,26 +59,33 @@
 	}
 
 	.custom-select-option {
-		font-size: 16px;
+		font-size: 14px;
 		color: $primary-black;
 		border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+
+		@include media-breakpoint-up(sm) {
+			font-size: 16px;
+		}
 	}
 
 	.custom-select-option.is-selected::before {
-		content: "";
+		content: '';
 		padding-right: 0;
 	}
 
 	.custom-select-option.has-focus {
 		margin: 0 -1.5em;
-		padding: 0.2em 1.5em;
+		padding: 0.5em 1.7em;
 		background-color: $color-light-gray;
+	}
+
+	.custom-select-container .custom-select-panel {
+		padding: 0 1.5em;
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
 	}
 
 	.custom-select-container.is-open .custom-select-panel {
 		max-height: 25em;
-		padding: 0 1.5em;
-		border-bottom-left-radius: 15px;
-		border-bottom-right-radius: 15px;
 	}
 }
