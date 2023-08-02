@@ -135,6 +135,8 @@
 				</div>
 			</div>
 
+
+			<!-- Offer -->
 			<section class="offer">
 				<div class="offer__wrapper container d-block-md">
 					<h3 class="offer__title">
@@ -146,10 +148,12 @@
 						подробной расшифровкой.
 					</p>
 
-					<a class="btn-main offer-btn" href="">Calculate</a>
+					<a class="btn-main offer-btn" href="http://localhost/profile.php">Calculate</a>
 				</div>
 			</section>
 
+
+			<!-- Read More -->
 			<section class="read-more__section">
 				<div class="container d-block-md">
 					<h3 class="read-more__title">Read more</h3>

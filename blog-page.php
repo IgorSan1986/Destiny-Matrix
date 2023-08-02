@@ -57,7 +57,7 @@
 					<!-- Cards -->
 					<div class="popular__content">
 						<article class="popular__card">
-							<a href="" class="popular-img">
+							<a href="http://localhost/post-page.php" class="popular-img">
 								<picture>
 									<source srcset="
 												./resources/img/blog-descr-img-mob1.webp,
@@ -76,7 +76,7 @@
 							</a>
 
 							<div class="popular__description">
-								<a href="">
+								<a href="http://localhost/post-page.php">
 									<h4 class="popular__subtitle">Blog post 1</h4>
 								</a>
 
@@ -84,7 +84,7 @@
 									22 Arcanum in the "plus": The main thing in this person is the spontaneity of feelings,
 									completefreedom and...
 								</p>
-								<a href="" class="read-more-btn">read more...</a>
+								<a href="http://localhost/post-page.php" class="read-more-btn">read more...</a>
 							</div>
 
 						</article>

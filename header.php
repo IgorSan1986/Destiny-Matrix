@@ -16,7 +16,7 @@
 					<a href="#">Calculation</a>
 				</li>
 				<li>
-					<a href="http://localhost/about.php">About</a>
+					<a href="#">About</a>
 				</li>
 				<li>
 					<a href="#">Testimonials</a>
