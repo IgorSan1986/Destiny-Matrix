@@ -1,0 +1,35 @@
+.offer {
+	width: 100%;
+	background-color: $offer-bg;
+
+	&__wrapper {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__title {
+		text-align: center;
+		margin-bottom: 12px;
+
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 24px;
+		}
+	}
+
+	&__text {
+		text-align: center;
+		margin-bottom: 12px;
+
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 24px;
+		}
+	}
+
+	.offer-btn {
+		color: $primary-white;
+	}
+}

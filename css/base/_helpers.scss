@@ -46,10 +46,22 @@
 	padding: 0 20px;
 
 	@include media-breakpoint-up(xs) {
-		padding: 0 40px;
+		padding: 0 30px;
 	}
 
 	@include media-breakpoint-up(lg) {
-		padding: 0 20px;
+		padding: 0 30px;
+	}
+
+	@include media-breakpoint-up(xl) {
+		width: 1100px;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	@include media-breakpoint-up(xxl) {
+		width: 1200px;
+		margin: 0 auto;
+		padding: 0;
 	}
 }

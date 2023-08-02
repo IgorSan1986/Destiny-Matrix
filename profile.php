@@ -10,6 +10,16 @@
 </head>
 
 <body class="page__body profile-page secondary-bg">
+	<!-- Loading screen -->
+	<div class="loading-screen">
+		<img srcset="
+		/resources/background-svg/Unionmobile.svg 576w,
+		/resources/background-svg/Union.svg 800w
+	" sizes="(max-width: 576px) 440px,
+						800px" src="/resources/background-svg/Union.svg" alt="Loading..." />
+	</div>
+
+	<!-- Overlap -->
 	<div class="overlap">
 		<div class="overlap-top">
 			<div class="inline-svg">
@@ -32,8 +42,13 @@
 	<?php include 'header.php'; ?>
 	<main>
 		<div class="container d-block-md">
+
 			<div class="tabcontainer">
+
+				<!-- Tab Header & DropwDown Menu -->
 				<div class="tabheader">
+
+					<!-- Tab Header -->
 					<ul class="tabheader__items">
 						<li class="tabheader__item active">
 							<a href="#profile">Profile</a>
@@ -55,6 +70,7 @@
 						</li>
 					</ul>
 
+					<!-- Dropdown Menu -->
 					<div class="tabheader-mobile has-form">
 						<form action="">
 							<select name="mobile-tabs" id="mobile-tabs">
@@ -69,6 +85,7 @@
 					</div>
 				</div>
 
+				<!-- Tabs -->
 				<div class="tabs">
 
 					<div id="profile" class="tabcontent active">

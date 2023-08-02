@@ -1,8 +1,8 @@
 //Fonts
-$font-family-inter: "Inter", serif;
-$font-family-mulish: "Mulish", serif;
-$font-family-antonio: "Antonio", sans-serif;
-$font-family-roboto: "Roboto", sans-serif;
+$font-family-inter: 'Inter', serif;
+$font-family-mulish: 'Mulish', serif;
+$font-family-antonio: 'Antonio', sans-serif;
+$font-family-roboto: 'Roboto', sans-serif;
 
 // ---
 // Override some variables for bootstrap
@@ -32,6 +32,7 @@ $color-dark-gray-text: #5d6970;
 $color-light-gray: #f2f2f2;
 $color-soft-light-gray: rgba(242, 244, 247, 0.8);
 $color-soft-pink: #ebd9ef;
+$color-light-pink: #ffebfd;
 
 $primary-black: $color-dark-gray;
 $primary-white: $color-white;
@@ -40,6 +41,7 @@ $secondary-blue: $color-blue;
 $secondary-black: $color-black;
 $footer-bg: $color-soft-pink;
 $shadow-btn: $color-soft-light-gray;
+$offer-bg: $color-light-pink;
 
 //Icons
 $Icont: ();

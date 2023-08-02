@@ -1,16 +1,39 @@
 .footer-personal {
+	position: relative;
 	width: 100vw;
-	padding: 0 0 60px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 
 	flex: 0 0 auto;
 
 	font-size: 14px;
 	line-height: 1.714;
 
-	background-color: initial;
+	background-color: transparent;
 
 	@include media-breakpoint-up(md) {
 		padding: 42px 0;
+	}
+
+	.post-page & {
+		background-color: $primary-white;
+	}
+
+	.blog-page &,
+	.post-page & {
+		@include media-breakpoint-down(sm) {
+			&::before {
+				content: url(../../resources/background-svg/Union.svg);
+				display: inline-block;
+				position: absolute;
+				top: -56px;
+				left: -10px;
+				width: 270px;
+				height: 270px;
+				opacity: 0.17;
+				z-index: -1;
+			}
+		}
 	}
 
 	&__header {

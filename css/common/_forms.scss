@@ -23,10 +23,10 @@
 	}
 
 	button,
-	input[type="text"],
-	input[type="email"],
-	input[type="tel"],
-	input[type="password"] {
+	input[type='text'],
+	input[type='email'],
+	input[type='tel'],
+	input[type='password'] {
 		width: 100%;
 		display: flex;
 		justify-content: center;
@@ -111,7 +111,7 @@
 	color: $secondary-black;
 
 	&::after {
-		content: url("../../resources/background-svg/Union.svg");
+		content: url('../../resources/background-svg/Union.svg');
 		display: inline-block;
 		position: absolute;
 		top: -425px;
@@ -127,7 +127,7 @@
 
 		@include media-breakpoint-up(sm) {
 			top: -430px;
-			left: clamp(-0.438rem, calc(-14.008rem + 37.7vw), 4.063rem);
+			left: clamp(3.75rem, calc(-13.967rem + 49.21vw), 9.625rem);
 		}
 
 		@include media-breakpoint-up(md) {
@@ -252,21 +252,21 @@
 	color: $secondary-black;
 
 	button,
-	input[type="text"],
-	input[type="email"],
-	input[type="tel"],
-	input[type="password"] {
+	input[type='text'],
+	input[type='email'],
+	input[type='tel'],
+	input[type='password'] {
 		border-radius: 999px;
 	}
 
 	&::after {
-		content: "";
+		content: '';
 		display: none;
 		opacity: 0.19;
 		z-index: -1;
 
 		@include media-breakpoint-up(md) {
-			content: url("../../resources/background-svg/Union.svg");
+			content: url('../../resources/background-svg/Union.svg');
 			display: inline-block;
 			position: absolute;
 			width: 300px;
@@ -316,10 +316,10 @@
 
 .user-form {
 	button,
-	input[type="text"],
-	input[type="email"],
-	input[type="tel"],
-	input[type="password"] {
+	input[type='text'],
+	input[type='email'],
+	input[type='tel'],
+	input[type='password'] {
 		border-radius: 999px;
 	}
 

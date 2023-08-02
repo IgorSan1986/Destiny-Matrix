@@ -1,0 +1,14 @@
+<svg id="blog-top" width="2339" height="2022" viewBox="0 0 2339 2022" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g>
+<g id="blog-top_2" filter="url(#filter0_f_550_88)">
+<path d="M485.806 1169.81C450.356 902.981 943.137 335.458 962.16 431.18C973.765 489.573 982.567 834.258 1009.66 1030.68C1026.98 1156.25 1827.04 1399.76 1902.16 1465.18C2094.8 1632.93 521.553 1438.86 485.806 1169.81Z" fill="#E8598A" fill-opacity="0.88"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_550_88" x="63.9823" y="0.424805" width="2274.52" height="1947.27" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="210" result="effect1_foregroundBlur_550_88"/>
+</filter>
+</defs>
+</svg>

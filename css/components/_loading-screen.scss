@@ -1,0 +1,26 @@
+.loading-screen {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	z-index: 1000;
+}
+
+/* Стили для изображения загрузки */
+.loading-screen img {
+	max-width: 50%;
+	max-height: 50%;
+	animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}

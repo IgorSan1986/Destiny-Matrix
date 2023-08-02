@@ -1,0 +1,261 @@
+.post-page {
+	overflow-x: hidden;
+
+	& main {
+		padding-top: 104px;
+	}
+
+	p {
+		font-size: 11px;
+		font-weight: 300;
+		line-height: 1.7;
+		color: $secondary-black;
+
+		@include media-breakpoint-up(sm) {
+			font-size: 14px;
+		}
+
+		@include media-breakpoint-up(md) {
+			font-size: 16px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			font-size: 18px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			font-size: 20px;
+		}
+	}
+
+	.back {
+		position: relative;
+
+		h1 {
+			position: relative;
+			margin-bottom: 28px;
+			padding-left: 32px;
+			font-size: 24px;
+
+			@include media-breakpoint-up(sm) {
+				font-size: 30px;
+			}
+
+			@include media-breakpoint-up(md) {
+				font-size: 36px;
+			}
+
+			@include media-breakpoint-up(lg) {
+				margin-bottom: 94px;
+				padding-left: 48px;
+				font-size: 50px;
+				line-height: 1.32;
+			}
+		}
+
+		&::before {
+			content: url('../../resources/svg/arrowmobile.svg');
+			display: inline-block;
+			position: absolute;
+			width: 10px;
+			height: 20px;
+			top: 9px;
+			left: 0;
+
+			@include media-breakpoint-up(md) {
+				content: url('../../resources/svg/arrowmobile.svg');
+				top: 14px;
+				left: 0;
+			}
+
+			@include media-breakpoint-up(lg) {
+				content: url('../../resources/svg/arrow.svg');
+				width: 16px;
+				height: 31px;
+				top: 15px;
+				left: 0;
+			}
+		}
+	}
+
+	.post {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+
+		&__img {
+			display: block;
+			width: 100%;
+			margin-bottom: clamp(1.5rem, calc(0.66rem + 4.8vw), 4.5rem);
+
+			img {
+				max-width: 335px;
+				width: 100%;
+				height: 166px;
+				object-fit: cover;
+
+				border-radius: 15px;
+
+				@include media-breakpoint-up(xs) {
+					max-width: 515px;
+				}
+
+				@include media-breakpoint-up(sm) {
+					max-width: 668px;
+				}
+
+				@include media-breakpoint-up(md) {
+					max-width: 891px;
+					height: 190px;
+				}
+
+				@include media-breakpoint-up(lg) {
+					max-width: 999px;
+					height: 210px;
+				}
+
+				@include media-breakpoint-up(xxl) {
+					max-width: 100%;
+					height: 250px;
+				}
+			}
+		}
+
+		&__title {
+			position: relative;
+			text-align: center;
+			margin-bottom: 12px;
+
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 1.5;
+
+			@include media-breakpoint-up(sm) {
+				font-size: 24px;
+			}
+
+			@include media-breakpoint-up(md) {
+				font-size: 30px;
+			}
+
+			@include media-breakpoint-up(lg) {
+				margin-bottom: 38px;
+
+				font-size: 40px;
+				font-weight: 500;
+				line-height: 1.2;
+			}
+
+			&::after {
+				content: url('../../resources/background-svg/Union.svg');
+				display: inline-block;
+				position: absolute;
+				top: 32px;
+				left: clamp(-0.938rem, calc(-13.832rem + 73.68vw), 3.438rem);
+				width: 270px;
+				height: 270px;
+				opacity: 0.17;
+				z-index: -1;
+
+				@include media-breakpoint-up(xs) {
+					left: clamp(3.75rem, calc(-10.675rem + 61.38vw), 18.75rem);
+				}
+
+				@include media-breakpoint-up(md) {
+					width: 538px;
+					height: 540px;
+					top: -30px;
+					left: 638px;
+				}
+			}
+		}
+
+		&__subtitle {
+			margin-bottom: 12px;
+			font-size: 14px;
+			font-weight: 500;
+			line-height: 2.928;
+
+			@include media-breakpoint-up(sm) {
+				font-size: 18px;
+			}
+
+			@include media-breakpoint-up(md) {
+				font-size: 22px;
+				line-height: 1.7;
+			}
+
+			@include media-breakpoint-up(lg) {
+				margin-bottom: 38px;
+				font-size: 24px;
+				font-weight: 500;
+			}
+		}
+
+		&__text {
+			margin-bottom: 65px;
+
+			@include media-breakpoint-up(md) {
+				margin-bottom: 38px;
+			}
+			p {
+				margin-bottom: 12px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		&__description {
+			margin-bottom: 38px;
+
+			display: flex;
+			gap: 70px;
+
+			picture > img {
+				max-width: 434px;
+				width: 100%;
+				height: 150px;
+
+				object-fit: cover;
+				border-radius: 15px;
+
+				@include media-breakpoint-up(lg) {
+					height: 210px;
+				}
+			}
+
+			ul > li {
+				list-style: initial;
+				list-style-position: outside;
+				color: $secondary-black;
+			}
+			@include media-breakpoint-down(md) {
+				display: none;
+			}
+		}
+
+		&__footer {
+			margin-bottom: 38px;
+
+			@include media-breakpoint-down(md) {
+				display: none;
+			}
+		}
+	}
+
+	.offer {
+		@include media-breakpoint-up(md) {
+			margin-bottom: 0;
+		}
+	}
+
+	.read-more__section {
+		width: 100%;
+		background-color: $primary-white;
+		@include media-breakpoint-down(lg) {
+			display: none;
+		}
+	}
+}

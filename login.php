@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html class="page" lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-		<title>Destiny matrix | Log in</title>
-	</head>
-	<body class="page__body login-page secondary-bg">
-		<div class="overlap">
-			<div class="overlap-top">
-				<div class="inline-svg">
-						<img src="/resources/background-svg/personal-top.svg" alt="background bottom 1">
-				</div>
-			</div>
 
-			<div class="overlap-bottom">
-				<div class="inline-svg">
-					<img src="/resources/background-svg/personal-bottom.svg" alt="background bottom 1">
-				</div>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />
+	<title>Destiny matrix | Log in</title>
+</head>
+
+<body class="page__body login-page secondary-bg">
+	<!-- Loading screen -->
+	<div class="loading-screen">
+		<img srcset="
+		/resources/background-svg/Unionmobile.svg 576w,
+		/resources/background-svg/Union.svg 800w
+	" sizes="(max-width: 576px) 440px,
+						800px" src="/resources/background-svg/Union.svg" alt="Loading..." />
+	</div>
+
+	<!-- Overlap -->
+	<div class="overlap">
+		<div class="overlap-top">
+			<div class="inline-svg">
+				<img src="/resources/background-svg/personal-top.svg" alt="background bottom 1">
 			</div>
 		</div>
+
+		<div class="overlap-bottom">
+			<div class="inline-svg">
+				<img src="/resources/background-svg/personal-bottom.svg" alt="background bottom 1">
+			</div>
+		</div>
+	</div>
 	<?php include 'header.php'; ?>
 	<main>
 		<div class="container d-block-md">
 			<div class="login-wrapper">
 				<h1 class="login-title">It’s so nice to see you again!</h1>
-				
+
 				<p>
 					Take the opportunity to explore your inner self at the most ideal moment.
 				</p>
@@ -33,11 +45,8 @@
 				<section class="form login-registration">
 					<div class="login-registration__btn">
 						<a href="http://localhost/login.php">
-							<button id="login" data-form="form-login"
-								class="login-registration--active"
-								aria-expanded="true" aria-controls="form-login"
-								type="button"
-							>
+							<button id="login" data-form="form-login" class="login-registration--active" aria-expanded="true"
+								aria-controls="form-login" type="button">
 								Log in
 							</button>
 						</a>
@@ -45,41 +54,25 @@
 
 					<div class="login-registration__btn">
 						<a href="http://localhost/registration.php">
-							<button id="registration" data-form="form-registration"
-								aria-expanded="false" aria-controls="registration"
-								type="button"
-							>
+							<button id="registration" data-form="form-registration" aria-expanded="false" aria-controls="registration"
+								type="button">
 								Registration
 							</button>
 						</a>
 					</div>
-	
-					<form id="form-login"
-						class="form-login-registration" action="">
-				
+
+					<form id="form-login" class="form-login-registration" action="">
+
 						<div class="form-login-registration__item1">
 							<label class="visually-hidden" for="email">email</label>
-							<input id='email'
-								type="email"
-								id="email"
-								name="email"
-								placeholder="Email"
-							/>
+							<input id='email' type="email" id="email" name="email" placeholder="Email" />
 						</div>
 						<div class="form-login-registration__item2">
 							<label class="visually-hidden" for="password">Enter your password</label>
-							<input
-								type="password"
-								id="password"
-								name="password"
-								placeholder="Password"
-							/>
+							<input type="password" id="password" name="password" placeholder="Password" />
 						</div>
 						<div class="form-login-registration__item3">
-							<button id="login-btn"
-								class="login-registration--active"
-								type="submit"
-							>
+							<button id="login-btn" class="login-registration--active" type="submit">
 								Log in
 							</button>
 						</div>
@@ -115,4 +108,4 @@
 	<?php include 'footer-personal.php'; ?>
 
 	<script src="/js/main.js"></script>
-	</body>
+</body>
