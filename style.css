@@ -1071,7 +1071,7 @@ h3 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 8px 14px;
+	padding: 8px 14px 8px 24px;
 	font-family: "Mulish", serif;
 	font-weight: 300;
 	line-height: 26px;
@@ -1101,7 +1101,7 @@ h3 {
 	width: 100%;
 	display: flex;
 	align-items: flex-start;
-	padding: 8px 14px;
+	padding: 8px 14px 8px 24px;
 	font-family: "Mulish", serif;
 	font-weight: 300;
 	font-size: 14px;
