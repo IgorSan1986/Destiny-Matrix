@@ -220,7 +220,7 @@
 				}
 
 				@include media-breakpoint-up(xxl) {
-					gap: clamp(1.875rem, calc(0.192rem + 1.92vw), 2.5rem);
+					gap: 25px;
 				}
 				.subscribe-card {
 					height: auto;
@@ -378,7 +378,7 @@
 	justify-content: space-around;
 }
 
-.rating input[type="radio"] {
+.rating input[type='radio'] {
 	display: none;
 }
 
@@ -387,12 +387,12 @@
 	display: inline-block;
 	width: 32px;
 	height: 29px;
-	background-image: url("/resources/svg/Starempty.svg");
+	background-image: url('/resources/svg/Starempty.svg');
 	background-size: cover;
 	cursor: pointer;
 }
 
-.rating input[type="radio"]:checked ~ label {
+.rating input[type='radio']:checked ~ label {
 	direction: ltr;
-	background-image: url("/resources/svg/Starfull.svg");
+	background-image: url('/resources/svg/Starfull.svg');
 }
